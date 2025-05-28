@@ -1,0 +1,350 @@
+Disease,cleaned_symptoms
+influenza,"['fever', 'fatigue', 'difficulty_breathing']"
+common_cold,"['cough', 'fatigue']"
+eczema,"['cough', 'fatigue']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+eczema,['fever']
+influenza,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+influenza,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+hyperthyroidism,['cough']
+hyperthyroidism,['cough']
+asthma,"['fever', 'difficulty_breathing']"
+allergic_rhinitis,"['cough', 'fatigue']"
+anxiety_disorders,['cough']
+common_cold,[]
+diabetes,[]
+gastroenteritis,['cough']
+pancreatitis,['fever']
+rheumatoid_arthritis,"['cough', 'fatigue', 'difficulty_breathing']"
+depression,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+liver_cancer,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+stroke,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+urinary_tract_infection,"['fever', 'cough', 'fatigue']"
+dengue,"['fever', 'fatigue']"
+dengue,"['fever', 'fatigue']"
+eczema,"['cough', 'fatigue']"
+gastroenteritis,"['fever', 'cough', 'fatigue']"
+hepatitis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+kidney_cancer,['fatigue']
+migraine,['fever']
+migraine,"['cough', 'fatigue']"
+muscular_dystrophy,['fatigue']
+sinusitis,"['cough', 'fatigue']"
+ulcerative_colitis,"['fever', 'cough']"
+ulcerative_colitis,"['cough', 'fatigue']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+bipolar_disorder,['fatigue']
+bronchitis,"['fever', 'cough', 'difficulty_breathing']"
+bronchitis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+bronchitis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+cerebral_palsy,"['fatigue', 'difficulty_breathing']"
+colorectal_cancer,['fatigue']
+eczema,['fever']
+hypertensive_heart_disease,['fatigue']
+influenza,"['fever', 'cough', 'fatigue']"
+influenza,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+multiple_sclerosis,['fatigue']
+myocardial_infarction_(heart_attack),"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+urinary_tract_infection,['fever']
+asthma,['difficulty_breathing']
+osteoporosis,['difficulty_breathing']
+common_cold,"['fever', 'fatigue', 'difficulty_breathing']"
+migraine,['fever']
+pneumonia,"['fever', 'fatigue', 'difficulty_breathing']"
+allergic_rhinitis,['fatigue']
+asthma,"['cough', 'fatigue', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+asthma,"['cough', 'fatigue', 'difficulty_breathing']"
+asthma,"['cough', 'fatigue', 'difficulty_breathing']"
+atherosclerosis,['fatigue']
+copd,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+common_cold,"['fever', 'cough', 'fatigue']"
+eczema,['cough']
+epilepsy,['fatigue']
+hypertension,"['fever', 'cough', 'fatigue']"
+hyperthyroidism,"['fever', 'cough', 'fatigue']"
+obsessive-compulsive_disorder_(ocd),['fatigue']
+pneumonia,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+pneumonia,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+psoriasis,['fever']
+psoriasis,"['cough', 'fatigue']"
+rubella,"['fever', 'fatigue']"
+rubella,"['fever', 'fatigue']"
+urinary_tract_infection,"['cough', 'fatigue']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+cirrhosis,['fatigue']
+conjunctivitis,['cough']
+depression,['fatigue']
+gastroenteritis,"['fever', 'fatigue', 'difficulty_breathing']"
+hyperthyroidism,"['fever', 'cough', 'fatigue']"
+hyperthyroidism,"['fever', 'cough', 'fatigue']"
+kidney_cancer,['fatigue']
+liver_cancer,['fatigue']
+liver_disease,['fatigue']
+malaria,['fever']
+malaria,['fever']
+migraine,"['cough', 'fatigue']"
+migraine,['fever']
+pancreatitis,['fatigue']
+rheumatoid_arthritis,"['fever', 'cough', 'fatigue']"
+rheumatoid_arthritis,['fatigue']
+spina_bifida,['fatigue']
+ulcerative_colitis,['fatigue']
+ulcerative_colitis,['fever']
+urinary_tract_infection,"['fever', 'fatigue']"
+allergic_rhinitis,['cough']
+depression,[]
+gastroenteritis,[]
+influenza,[]
+kidney_disease,['fatigue']
+liver_cancer,"['fever', 'cough']"
+liver_disease,"['cough', 'difficulty_breathing']"
+osteoporosis,['cough']
+stroke,"['fever', 'cough']"
+anxiety_disorders,"['fever', 'fatigue', 'difficulty_breathing']"
+diabetes,"['fever', 'fatigue', 'difficulty_breathing']"
+migraine,"['fever', 'cough']"
+osteoarthritis,"['fever', 'cough', 'fatigue']"
+pneumonia,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+klinefelter_syndrome,['fatigue']
+acne,['fatigue']
+brain_tumor,['fatigue']
+bronchitis,"['cough', 'difficulty_breathing']"
+cystic_fibrosis,"['fatigue', 'difficulty_breathing']"
+diabetes,['fever']
+glaucoma,['fatigue']
+osteoarthritis,['fatigue']
+rabies,"['fever', 'cough']"
+rabies,"['fever', 'cough']"
+asthma,"['fever', 'fatigue']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fatigue', 'difficulty_breathing']"
+asthma,"['fever', 'fatigue', 'difficulty_breathing']"
+asthma,"['fever', 'fatigue', 'difficulty_breathing']"
+chicken_pox,['cough']
+chicken_pox,['cough']
+coronary_artery_disease,['fatigue']
+eating_disorders,['fatigue']
+fibromyalgia,['fatigue']
+gastroenteritis,"['fever', 'cough', 'fatigue']"
+hemophilia,['fatigue']
+hyperthyroidism,['fatigue']
+hypoglycemia,['fatigue']
+lymphoma,['cough']
+pneumonia,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+psoriasis,"['cough', 'fatigue']"
+psoriasis,['fever']
+psoriasis,['cough']
+tuberculosis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+tuberculosis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+anxiety_disorders,[]
+common_cold,"['fever', 'cough']"
+depression,"['fever', 'difficulty_breathing']"
+influenza,['cough']
+kidney_cancer,['fever']
+liver_cancer,"['fever', 'fatigue', 'difficulty_breathing']"
+liver_disease,"['fever', 'difficulty_breathing']"
+lung_cancer,"['fever', 'fatigue', 'difficulty_breathing']"
+migraine,"['fever', 'cough', 'fatigue']"
+osteoarthritis,['fatigue']
+stroke,"['fever', 'fatigue']"
+urinary_tract_infection,"['cough', 'fatigue', 'difficulty_breathing']"
+diabetes,"['fever', 'cough', 'fatigue']"
+hypothyroidism,"['fever', 'cough', 'fatigue']"
+hypothyroidism,"['fever', 'cough', 'fatigue']"
+kidney_disease,"['fever', 'fatigue']"
+pneumonia,"['cough', 'fatigue', 'difficulty_breathing']"
+allergic_rhinitis,"['cough', 'fatigue']"
+autism_spectrum_disorder,['fatigue']
+crohns_disease,"['fever', 'fatigue']"
+hepatitis,"['fever', 'fatigue']"
+hepatitis,"['fever', 'fatigue']"
+hyperglycemia,['fatigue']
+kidney_cancer,"['cough', 'fatigue', 'difficulty_breathing']"
+kidney_disease,"['fever', 'cough']"
+melanoma,"['fever', 'fatigue']"
+migraine,[]
+ovarian_cancer,['fatigue']
+pancreatitis,"['cough', 'fatigue', 'difficulty_breathing']"
+rheumatoid_arthritis,['fever']
+stroke,['fatigue']
+turner_syndrome,['fatigue']
+turner_syndrome,['fatigue']
+urinary_tract_infection,[]
+zika_virus,"['cough', 'fatigue']"
+zika_virus,"['cough', 'fatigue']"
+allergic_rhinitis,"['fever', 'cough', 'fatigue']"
+anxiety_disorders,"['fever', 'cough', 'fatigue']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'difficulty_breathing']"
+cataracts,['fatigue']
+crohns_disease,['fatigue']
+crohns_disease,"['fever', 'cough', 'fatigue']"
+depression,['fatigue']
+diabetes,"['fever', 'fatigue']"
+diabetes,"['cough', 'fatigue']"
+hypertension,"['fever', 'fatigue']"
+hypothyroidism,['fatigue']
+liver_disease,"['fever', 'cough', 'fatigue']"
+multiple_sclerosis,['fever']
+multiple_sclerosis,['fever']
+osteoarthritis,"['fever', 'fatigue', 'difficulty_breathing']"
+osteoporosis,"['fever', 'cough', 'fatigue']"
+pneumonia,"['fever', 'cough', 'fatigue']"
+pneumonia,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+scoliosis,[]
+sickle_cell_anemia,['fatigue']
+tetanus,['fatigue']
+tetanus,['fatigue']
+hypertension,[]
+hypothyroidism,['fatigue']
+hypothyroidism,['fatigue']
+allergic_rhinitis,['fever']
+anemia,['fatigue']
+anxiety_disorders,['fatigue']
+cholera,"['fever', 'fatigue', 'difficulty_breathing']"
+cholera,"['fever', 'fatigue', 'difficulty_breathing']"
+crohns_disease,"['fever', 'cough', 'fatigue']"
+crohns_disease,['fatigue']
+depression,"['cough', 'fatigue']"
+diabetes,['cough']
+endometriosis,['fever']
+hypertension,['cough']
+hypothyroidism,"['fever', 'cough', 'fatigue']"
+kidney_cancer,['cough']
+kidney_disease,"['cough', 'difficulty_breathing']"
+pancreatitis,['cough']
+rheumatoid_arthritis,['cough']
+sepsis,"['fever', 'cough', 'fatigue']"
+sleep_apnea,"['fever', 'fatigue', 'difficulty_breathing']"
+urinary_tract_infection,"['fever', 'cough', 'difficulty_breathing']"
+asthma,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+bronchitis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+down_syndrome,['fatigue']
+ebola_virus,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+ebola_virus,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+eczema,['cough']
+gastroenteritis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+klinefelter_syndrome,['fatigue']
+liver_cancer,"['cough', 'fatigue', 'difficulty_breathing']"
+lyme_disease,['fever']
+lyme_disease,['fever']
+pancreatic_cancer,['fatigue']
+pneumothorax,"['fatigue', 'difficulty_breathing']"
+stroke,"['cough', 'fatigue', 'difficulty_breathing']"
+ulcerative_colitis,"['cough', 'fatigue']"
+hypertension,"['fever', 'cough']"
+multiple_sclerosis,"['cough', 'fatigue']"
+multiple_sclerosis,"['cough', 'fatigue']"
+appendicitis,"['fever', 'fatigue']"
+bronchitis,"['fatigue', 'difficulty_breathing']"
+bronchitis,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+common_cold,"['fever', 'fatigue', 'difficulty_breathing']"
+diabetes,['cough']
+esophageal_cancer,['fatigue']
+aids,['fever']
+aids,['fever']
+hypertension,['cough']
+liver_disease,"['cough', 'fatigue']"
+marfan_syndrome,['fatigue']
+migraine,"['cough', 'fatigue', 'difficulty_breathing']"
+osteoporosis,['fatigue']
+parkinson's_disease,['fatigue']
+parkinson's_disease,['fatigue']
+anxiety_disorders,"['fever', 'cough']"
+coronary_artery_disease,['fatigue']
+coronary_artery_disease,['fatigue']
+hemorrhoids,[]
+hypertension,"['fever', 'fatigue']"
+hypothyroidism,['fatigue']
+osteoarthritis,"['fever', 'cough']"
+osteoporosis,"['fever', 'fatigue', 'difficulty_breathing']"
+osteoporosis,"['cough', 'fatigue']"
+osteoporosis,"['fever', 'fatigue']"
+osteoporosis,"['fever', 'fatigue']"
+polycystic_ovary_syndrome,"['fever', 'cough']"
+systemic_lupus_erythematosus_(sle),"['cough', 'fatigue']"
+typhoid,['cough']
+typhoid,['cough']
+influenza,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+pneumonia,"['fever', 'cough', 'difficulty_breathing']"
+breast_cancer,['fatigue']
+coronary_artery_disease,"['fever', 'cough']"
+coronary_artery_disease,"['fever', 'cough']"
+hyperthyroidism,['fatigue']
+measles,"['fever', 'cough']"
+measles,"['fever', 'cough']"
+osteoarthritis,"['cough', 'difficulty_breathing']"
+osteomyelitis,['fatigue']
+osteoporosis,['fever']
+osteoporosis,['cough']
+osteoporosis,['cough']
+polio,"['fever', 'cough', 'fatigue']"
+asthma,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+chronic_kidney_disease,['fatigue']
+hemophilia,['fatigue']
+hepatitis_b,"['cough', 'fatigue']"
+hepatitis_b,"['cough', 'fatigue']"
+hypertension,['fatigue']
+hypertension,"['fever', 'fatigue']"
+hypertension,[]
+kidney_cancer,"['fever', 'cough', 'fatigue']"
+kidney_disease,"['fever', 'cough', 'fatigue', 'difficulty_breathing']"
+osteoporosis,"['fever', 'fatigue']"
+pancreatitis,"['fever', 'cough', 'fatigue']"
+parkinson's_disease,"['fever', 'cough']"
+parkinson's_disease,"['fever', 'cough']"
+prader_willi_syndrome,['fatigue']
+rheumatoid_arthritis,['fatigue']
+thyroid_cancer,['fatigue']
+tuberculosis,"['fever', 'cough', 'fatigue']"
+bladder_cancer,['fatigue']
+diabetes,['fatigue']
+otitis_media,"['fever', 'cough', 'fatigue']"
+stroke,"['fever', 'fatigue']"
+stroke,"['fever', 'fatigue']"
+tourette_syndrome,['fatigue']
+urinary_tract_infection,"['fever', 'fatigue']"
+alzheimers_disease,['cough']
+alzheimers_disease,['cough']
+alzheimers_disease,['fatigue']
+bronchitis,"['fever', 'fatigue', 'difficulty_breathing']"
+copd,"['fever', 'fatigue', 'difficulty_breathing']"
+copd,"['fever', 'fatigue', 'difficulty_breathing']"
+dementia,['fatigue']
+diabetes,"['fever', 'cough', 'fatigue']"
+diverticulitis,['fatigue']
+liver_cancer,"['fever', 'cough', 'fatigue']"
+lung_cancer,"['fever', 'cough', 'fatigue']"
+lung_cancer,"['fever', 'fatigue']"
+mumps,['fatigue']
+mumps,['fatigue']
+osteoporosis,"['cough', 'fatigue']"
+stroke,"['fever', 'cough', 'fatigue']"
+alzheimers_disease,"['fever', 'fatigue']"
+alzheimers_disease,"['fever', 'fatigue']"
+cholecystitis,['fatigue']
+copd,"['cough', 'fatigue', 'difficulty_breathing']"
+copd,"['cough', 'fatigue', 'difficulty_breathing']"
+osteoporosis,['fever']
+parkinson's_disease,['fatigue']
+prostate_cancer,"['fever', 'cough']"
+schizophrenia,"['cough', 'fatigue']"
+gout,"['fever', 'fatigue']"
+migraine,['fatigue']
+stroke,['cough']
+stroke,['cough']
+testicular_cancer,['fatigue']
+tonsillitis,"['fever', 'cough', 'fatigue']"
+williams_syndrome,['fatigue']
+stroke,"['fever', 'fatigue']"
+stroke,"['fever', 'fatigue']"
+stroke,"['fever', 'fatigue']"
+stroke,"['fever', 'fatigue']"
+stroke,"['fever', 'fatigue']"
+stroke,"['fever', 'fatigue']"
