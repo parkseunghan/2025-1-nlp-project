@@ -1,12 +1,14 @@
 {
   "aids": [
     "extra_marital_contacts",
+    "fever",
     "high_fever",
     "muscle_wasting",
     "patches_in_throat"
   ],
   "acne": [
     "blackheads",
+    "fatigue",
     "pus_filled_pimples",
     "scurrying",
     "skin_rash"
@@ -49,6 +51,7 @@
     "weakness_in_limbs"
   ],
   "chicken_pox": [
+    "cough",
     "fatigue",
     "fever",
     "headache",
@@ -71,12 +74,14 @@
     "yellowish_skin"
   ],
   "common_cold": [
+    "breathlessness",
     "chest_pain",
     "chills",
     "congestion",
     "continuous_sneezing",
     "cough",
     "fatigue",
+    "fever",
     "headache",
     "high_fever",
     "loss_of_smell",
@@ -100,6 +105,7 @@
     "back_pain",
     "chills",
     "fatigue",
+    "fever",
     "headache",
     "high_fever",
     "joint_pain",
@@ -114,8 +120,11 @@
   ],
   "diabetes": [
     "blurred_and_distorted_vision",
+    "breathlessness",
+    "cough",
     "excessive_hunger",
     "fatigue",
+    "fever",
     "increased_appetite",
     "irregular_sugar_level",
     "lethargy",
@@ -135,12 +144,10 @@
     "burning_micturition",
     "itching",
     "skin_rash",
-    "spotting__urination",
     "spotting_urination",
     "stomach_pain"
   ],
   "fungal_infection": [
-    "dischromic__patches",
     "dyschromic_patches",
     "family_history",
     "itching",
@@ -159,14 +166,21 @@
     "vomiting"
   ],
   "gastroenteritis": [
+    "breathlessness",
+    "cough",
     "dehydration",
     "diarrhoea",
+    "fatigue",
+    "fever",
     "sunken_eyes",
     "vomiting"
   ],
   "heart_attack": [
     "breathlessness",
     "chest_pain",
+    "cough",
+    "fatigue",
+    "fever",
     "sweating",
     "vomiting"
   ],
@@ -185,6 +199,7 @@
   ],
   "hepatitis_b": [
     "abdominal_pain",
+    "cough",
     "dark_urine",
     "fatigue",
     "itching",
@@ -233,17 +248,22 @@
   ],
   "hypertension": [
     "chest_pain",
+    "cough",
     "dizziness",
+    "fatigue",
+    "fever",
     "headache",
     "lack_of_concentration",
     "loss_of_balance"
   ],
   "hyperthyroidism": [
     "abnormal_menstruation",
+    "cough",
     "diarrhoea",
     "excessive_hunger",
     "fast_heart_rate",
     "fatigue",
+    "fever",
     "irritability",
     "mood_swings",
     "muscle_weakness",
@@ -269,10 +289,12 @@
     "abnormal_menstruation",
     "brittle_nails",
     "cold_hands_and_feet",
+    "cough",
     "depression",
     "dizziness",
     "enlarged_thyroid",
     "fatigue",
+    "fever",
     "irritability",
     "lethargy",
     "mood_swings",
@@ -300,6 +322,7 @@
   "malaria": [
     "chills",
     "diarrhoea",
+    "fever",
     "headache",
     "high_fever",
     "muscle_pain",
@@ -310,8 +333,12 @@
   "migraine": [
     "acidity",
     "blurred_and_distorted_vision",
+    "breathlessness",
+    "cough",
     "depression",
     "excessive_hunger",
+    "fatigue",
+    "fever",
     "headache",
     "indigestion",
     "irritability",
@@ -319,6 +346,10 @@
     "visual_disturbances"
   ],
   "osteoarthritis": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever",
     "hip_joint_pain",
     "joint_pain",
     "knee_pain",
@@ -355,6 +386,7 @@
     "cough",
     "fast_heart_rate",
     "fatigue",
+    "fever",
     "high_fever",
     "malaise",
     "phlegm",
@@ -362,6 +394,9 @@
     "sweating"
   ],
   "psoriasis": [
+    "cough",
+    "fatigue",
+    "fever",
     "inflammatory_nails",
     "joint_pain",
     "silver_like_dusting",
@@ -389,9 +424,9 @@
   ],
   "typhoid": [
     "abdominal_pain",
-    "belly_pain",
     "chills",
     "constipation",
+    "cough",
     "diarrhoea",
     "fatigue",
     "headache",
@@ -402,8 +437,12 @@
   ],
   "urinary_tract_infection": [
     "bladder_discomfort",
+    "breathlessness",
     "burning_micturition",
     "continuous_feel_of_urine",
+    "cough",
+    "fatigue",
+    "fever",
     "foul_smell_of_urine"
   ],
   "varicose_veins": [
@@ -414,5 +453,371 @@
     "prominent_veins_on_calf",
     "swollen_blood_vessels",
     "swollen_legs"
+  ],
+  "influenza": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "eczema": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "asthma": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "allergic_rhinitis": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "anxiety_disorders": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "pancreatitis": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "rheumatoid_arthritis": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "depression": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "liver_cancer": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "stroke": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "hepatitis": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "kidney_cancer": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "muscular_dystrophy": [
+    "fatigue"
+  ],
+  "sinusitis": [
+    "cough",
+    "fatigue"
+  ],
+  "ulcerative_colitis": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "bipolar_disorder": [
+    "fatigue"
+  ],
+  "bronchitis": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "cerebral_palsy": [
+    "breathlessness",
+    "fatigue"
+  ],
+  "colorectal_cancer": [
+    "fatigue"
+  ],
+  "hypertensive_heart_disease": [
+    "fatigue"
+  ],
+  "multiple_sclerosis": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "osteoporosis": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "atherosclerosis": [
+    "fatigue"
+  ],
+  "copd": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "epilepsy": [
+    "fatigue"
+  ],
+  "obsessive_compulsive_disorder_(ocd)": [
+    "fatigue"
+  ],
+  "rubella": [
+    "fatigue",
+    "fever"
+  ],
+  "cirrhosis": [
+    "fatigue"
+  ],
+  "conjunctivitis": [
+    "cough"
+  ],
+  "liver_disease": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "spina_bifida": [
+    "fatigue"
+  ],
+  "kidney_disease": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "klinefelter_syndrome": [
+    "fatigue"
+  ],
+  "brain_tumor": [
+    "fatigue"
+  ],
+  "cystic_fibrosis": [
+    "breathlessness",
+    "fatigue"
+  ],
+  "glaucoma": [
+    "fatigue"
+  ],
+  "rabies": [
+    "cough",
+    "fever"
+  ],
+  "coronary_artery_disease": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "eating_disorders": [
+    "fatigue"
+  ],
+  "fibromyalgia": [
+    "fatigue"
+  ],
+  "hemophilia": [
+    "fatigue"
+  ],
+  "lymphoma": [
+    "cough"
+  ],
+  "lung_cancer": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "autism_spectrum_disorder": [
+    "fatigue"
+  ],
+  "crohns_disease": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "hyperglycemia": [
+    "fatigue"
+  ],
+  "melanoma": [
+    "fatigue",
+    "fever"
+  ],
+  "ovarian_cancer": [
+    "fatigue"
+  ],
+  "turner_syndrome": [
+    "fatigue"
+  ],
+  "zika_virus": [
+    "cough",
+    "fatigue"
+  ],
+  "cataracts": [
+    "fatigue"
+  ],
+  "scoliosis": [],
+  "sickle_cell_anemia": [
+    "fatigue"
+  ],
+  "tetanus": [
+    "fatigue"
+  ],
+  "anemia": [
+    "fatigue"
+  ],
+  "cholera": [
+    "breathlessness",
+    "fatigue",
+    "fever"
+  ],
+  "endometriosis": [
+    "fever"
+  ],
+  "sepsis": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "sleep_apnea": [
+    "breathlessness",
+    "fatigue",
+    "fever"
+  ],
+  "down_syndrome": [
+    "fatigue"
+  ],
+  "ebola_virus": [
+    "breathlessness",
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "lyme_disease": [
+    "fever"
+  ],
+  "pancreatic_cancer": [
+    "fatigue"
+  ],
+  "pneumothorax": [
+    "breathlessness",
+    "fatigue"
+  ],
+  "appendicitis": [
+    "fatigue",
+    "fever"
+  ],
+  "esophageal_cancer": [
+    "fatigue"
+  ],
+  "marfan_syndrome": [
+    "fatigue"
+  ],
+  "parkinson's_disease": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "hemorrhoids": [],
+  "polycystic_ovary_syndrome": [
+    "cough",
+    "fever"
+  ],
+  "systemic_lupus_erythematosus_(sle)": [
+    "cough",
+    "fatigue"
+  ],
+  "breast_cancer": [
+    "fatigue"
+  ],
+  "measles": [
+    "cough",
+    "fever"
+  ],
+  "osteomyelitis": [
+    "fatigue"
+  ],
+  "polio": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "chronic_kidney_disease": [
+    "fatigue"
+  ],
+  "prader_willi_syndrome": [
+    "fatigue"
+  ],
+  "thyroid_cancer": [
+    "fatigue"
+  ],
+  "bladder_cancer": [
+    "fatigue"
+  ],
+  "otitis_media": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "tourette_syndrome": [
+    "fatigue"
+  ],
+  "alzheimers_disease": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "dementia": [
+    "fatigue"
+  ],
+  "diverticulitis": [
+    "fatigue"
+  ],
+  "mumps": [
+    "fatigue"
+  ],
+  "cholecystitis": [
+    "fatigue"
+  ],
+  "prostate_cancer": [
+    "cough",
+    "fever"
+  ],
+  "schizophrenia": [
+    "cough",
+    "fatigue"
+  ],
+  "gout": [
+    "fatigue",
+    "fever"
+  ],
+  "testicular_cancer": [
+    "fatigue"
+  ],
+  "tonsillitis": [
+    "cough",
+    "fatigue",
+    "fever"
+  ],
+  "williams_syndrome": [
+    "fatigue"
   ]
 }

@@ -1,70 +1,96 @@
-# 📄 predict_disease.py (증상 하드코딩 버전)
+# 📄 scripts/predict_disease.py
 import json
 import time
-import ast
 import numpy as np
 import pandas as pd
-from pathlib import Path
 from sklearn.ensemble import RandomForestClassifier
 
-# ✅ 파일 경로
-SYMPTOM_LIST_PATH = "data/final_symptom_list.json"
-DISEASE_LIST_PATH = "data/final_disease_list.json"
+# ✅ 경로
+SYMPTOM_LIST_PATH = "data/symptoms.json"
 SEVERITY_PATH = "processed/merged_symptom_severity.csv"
-TRAIN_PATH = "processed/karthik_train_cleaned.csv"
+X_PATH = "processed/X_train.npy"
+Y_PATH = "processed/y_train.npy"
 
 # ✅ 데이터 로딩
 with open(SYMPTOM_LIST_PATH) as f:
     SYMPTOM_LIST = json.load(f)
 
-with open(DISEASE_LIST_PATH) as f:
-    DISEASE_LIST = json.load(f)
-
 severity_df = pd.read_csv(SEVERITY_PATH)
 severity_dict = dict(zip(severity_df["Symptom"], severity_df["Symptom_severity"]))
 
-train_df = pd.read_csv(TRAIN_PATH)
-train_df["cleaned_symptoms"] = train_df["cleaned_symptoms"].apply(ast.literal_eval)
+X = np.load(X_PATH)
+y = np.load(Y_PATH, allow_pickle=True)
+
+
+# ✅ 디버깅 함수
+def debug(title, data):
+    print(f"\n🔎 {title}")
+    if isinstance(data, (list, dict, np.ndarray)):
+        print(data if len(str(data)) < 500 else str(data)[:500] + "...")
+    else:
+        print(data)
 
 
 # ✅ 증상 → 벡터 변환 함수
 def symptoms_to_vector(symptoms: list[str]) -> np.ndarray:
+    debug("입력된 증상 목록", symptoms)
     vector = np.zeros(len(SYMPTOM_LIST))
     for s in symptoms:
         if s in SYMPTOM_LIST:
             vector[SYMPTOM_LIST.index(s)] = 1
+    debug("증상 벡터 변환 결과 (numpy 배열)", vector)
     return vector
 
 
-# ✅ 위험도 계산 (severity 기반)
+# ✅ 위험도 계산
 def calculate_risk_level(symptoms: list[str]) -> tuple[float, str]:
-    severities = [severity_dict.get(s, 0) for s in symptoms]
-    total = sum(severities)
-    avg = total / len(severities) if severities else 0
-    adjusted = total + avg * 1.5
-    if adjusted < 5:
-        return round(adjusted, 2), "low"
-    elif adjusted < 10:
-        return round(adjusted, 2), "medium"
+    weighted_severities = []
+    for s in symptoms:
+        base = severity_dict.get(s, 0)
+        multiplier = {
+            1: 1.0,
+            2: 1.0,
+            3: 1.1,
+            4: 1.2,
+            5: 1.4,
+            6: 1.6,
+            7: 1.8,
+        }.get(
+            base, 1.0
+        )  # 기본 가중치는 1.0
+        weighted = base * multiplier
+        weighted_severities.append(weighted)
+
+    total = sum(weighted_severities)
+    debug("가중치 적용된 severity", dict(zip(symptoms, weighted_severities)))
+    debug("총합 (가중치 적용)", total)
+
+    if total >= 30:
+        return round(total, 2), "high"
+    elif total >= 15:
+        return round(total, 2), "medium"
     else:
-        return round(adjusted, 2), "high"
+        return round(total, 2), "low"
 
 
 # ✅ 모델 학습
-X = np.array([symptoms_to_vector(s) for s in train_df["cleaned_symptoms"]])
-y = train_df["prognosis"]
 model = RandomForestClassifier(random_state=42)
 model.fit(X, y)
+print(f"\n✅ 모델 학습 완료: 총 학습 샘플 {len(X)}개, 클래스 수: {len(model.classes_)}")
 
 
 # ✅ 예측 함수
 def predict_disease(symptoms: list[str], top_n: int = 3) -> dict:
+    print("\n🧪 예측 시작")
     start = time.time()
     vec = symptoms_to_vector(symptoms).reshape(1, -1)
 
     probas = model.predict_proba(vec)[0]
+    debug("전체 질병별 예측 확률", dict(zip(model.classes_, probas)))
+
     prob_dict = {label: probas[i] for i, label in enumerate(model.classes_)}
     ranked = sorted(prob_dict.items(), key=lambda x: x[1], reverse=True)[:top_n]
+    debug("Top-N 예측 결과", ranked)
 
     fine_label = ranked[0][0]
     coarse_label = fine_label.split("_")[0]
@@ -94,10 +120,16 @@ def predict_disease(symptoms: list[str], top_n: int = 3) -> dict:
 
 # ✅ 실행: 증상 하드코딩
 if __name__ == "__main__":
-    test_symptoms = ["cough", "chest_pain", "high_fever"]  # 🔧 여기에 원하는 증상 입력
+    test_symptoms = [
+        "extra_marital_contacts",
+        "fever",
+        "high_fever",
+        "muscle_wasting",
+        "patches_in_throat",
+    ]
     result = predict_disease(test_symptoms)
 
     from pprint import pprint
 
-    print("✅ 입력 증상:", test_symptoms)
+    print("\n✅ 최종 예측 결과:")
     pprint(result)

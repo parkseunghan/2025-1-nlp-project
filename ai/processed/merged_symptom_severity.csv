@@ -6,7 +6,6 @@ acute_liver_failure,6.0
 altered_sensorium,2.0
 anxiety,4.0
 back_pain,3.0
-belly_pain,4.0
 blackheads,2.0
 bladder_discomfort,4.0
 blister,4.0
@@ -31,7 +30,7 @@ dark_urine,4.0
 dehydration,4.0
 depression,3.0
 diarrhoea,6.0
-dischromic_patches,6.0
+dyschromic_patches,6.0
 distention_of_abdomen,4.0
 dizziness,4.0
 drying_and_tingling_lips,4.0

@@ -1,0 +1,1455 @@
+[
+  {
+    "id": "abdominal_pain",
+    "ko": ["복통", "배아픔", "위통", "속쓰림"],
+    "en": ["abdominal pain", "stomach ache", "belly pain", "gastric pain", "tummy ache"],
+    "token_sets": [
+      {
+        "part1": ["배", "복부", "속", "위"],
+        "part2": ["아파", "아프", "쓰리", "쑤시", "통증", "쓰려", "쓰림", "쓰린"]
+      }
+    ]
+  },
+  {
+    "id": "abnormal_menstruation",
+    "ko": ["생리불순", "월경 이상", "생리이상"],
+    "en": ["abnormal menstruation", "irregular periods", "menstrual disorder", "cycle problem"],
+    "token_sets": [
+      {
+        "part1": ["생리", "월경"],
+        "part2": ["불규칙", "이상", "문제", "멈추", "끊기"]
+      }
+    ]
+  },
+  {
+    "id": "acidity",
+    "ko": ["속쓰림", "가슴쓰림"],
+    "en": ["acidity", "acid reflux", "heartburn", "gastric acid"],
+    "token_sets": [
+      {
+        "part1": ["속", "가슴", "위"],
+        "part2": ["쓰리", "쓰림", "신물", "올라오", "역류", "따갑", "쓰려", "따가워", "쓰린"]
+      }
+    ]
+  },
+  {
+    "id": "acute_liver_failure",
+    "ko": ["간부전", "간기능저하", "간장애"],
+    "en": ["acute liver failure", "liver dysfunction", "hepatic failure", "liver failure"],
+    "token_sets": [
+      {
+        "part1": ["간"],
+        "part2": ["부전", "기능", "저하", "문제", "망가지", "손상", "이상"]
+      }
+    ]
+  },
+  {
+    "id": "altered_sensorium",
+    "ko": ["정신혼미", "의식저하", "정신이상"],
+    "en": ["altered sensorium", "mental confusion", "clouded consciousness", "dazed"],
+    "token_sets": [
+      {
+        "part1": ["정신", "의식", "머리"],
+        "part2": ["혼미", "흐리", "혼란", "멍하", "이상"]
+      }
+    ]
+  },
+  {
+    "id": "anxiety",
+    "ko": ["불안", "초조함", "불안감"],
+    "en": ["anxiety", "nervousness", "uneasiness", "restlessness", "worry"],
+    "token_sets": [
+      {
+        "part1": ["마음", "정신", "기분"],
+        "part2": ["불안", "초조", "떨리", "긴장", "불편"]
+      }
+    ]
+  },
+  {
+    "id": "back_pain",
+    "ko": ["요통", "허리통증", "허리아픔"],
+    "en": ["back pain", "lower back pain", "lumbago", "waist pain"],
+    "token_sets": [
+      {
+        "part1": ["허리", "등", "요추"],
+        "part2": ["아파", "아프", "쑤시", "통증", "저리", "쑤셔", "찌릿", "찌릿거려"]
+      }
+    ]
+  },
+  {
+    "id": "blackheads",
+    "ko": ["블랙헤드", "면포"],
+    "en": ["blackheads", "comedo", "clogged pores", "black spots"],
+    "token_sets": [
+      {
+        "part1": ["코", "피부"],
+        "part2": ["블랙헤드", "면포", "검은점", "좁쌀", "기름"]
+      }
+    ]
+  },
+  {
+    "id": "bladder_discomfort",
+    "ko": ["방광통증", "방광불편감"],
+    "en": ["bladder discomfort", "bladder pain", "urinary discomfort"],
+    "token_sets": [
+      {
+        "part1": ["방광", "소변"],
+        "part2": ["아파", "아프", "불편", "쑤시", "따갑", "통증"]
+      }
+    ]
+  },
+  {
+    "id": "blister",
+    "ko": ["물집", "수포"],
+    "en": ["blister", "skin blister", "bubble", "fluid bump"],
+    "token_sets": [
+      {
+        "part1": ["피부", "손", "발", "입", "입술"],
+        "part2": ["물집", "수포", "잡히", "생기", "부풀"]
+      }
+    ]
+  },
+  {
+    "id": "blood_in_sputum",
+    "ko": ["객혈", "피섞인가래", "가래에피"],
+    "en": ["blood in sputum", "bloody sputum", "hemoptysis", "coughing blood"],
+    "token_sets": [
+      {
+        "part1": ["가래", "기침", "침", "목"],
+        "part2": ["피", "붉", "붉은", "빨간", "피섞", "피가"]
+      }
+    ]
+  },
+  {
+    "id": "bloody_stool",
+    "ko": ["혈변", "피변", "변에피", "피똥"],
+    "en": ["bloody stool", "blood in stool", "rectal bleeding", "hematochezia"],
+    "token_sets": [
+      {
+        "part1": ["대변", "변", "배변", "똥"],
+        "part2": ["피", "붉", "피가", "피섞", "혈", "붉은"]
+      }
+    ]
+  },
+  {
+    "id": "blurred_and_distorted_vision",
+    "ko": ["흐릿한시야", "시야흐림", "눈흐림", "시야이상"],
+    "en": ["blurred vision", "distorted vision", "blurry sight", "visual distortion"],
+    "token_sets": [
+      {
+        "part1": ["눈", "시야", "시력", "시선"],
+        "part2": ["흐리", "흐릿", "흐려", "안보이", "어지럽"]
+      }
+    ]
+  },
+  {
+    "id": "breathlessness",
+    "ko": ["숨참", "숨막힘", "호흡곤란"],
+    "en": ["breathlessness", "shortness of breath", "dyspnea", "difficulty breathing"],
+    "token_sets": [
+      {
+        "part1": ["숨", "호흡", "가슴", "폐"],
+        "part2": ["차", "막히", "곤란", "힘들", "답답"]
+      }
+    ]
+  },
+  {
+    "id": "brittle_nails",
+    "ko": ["손톱약함", "손톱부서짐", "손톱깨짐"],
+    "en": ["brittle nails", "weak nails", "fragile nails", "cracked nails"],
+    "token_sets": [
+      {
+        "part1": ["손톱", "발톱"],
+        "part2": ["약하", "깨지", "갈라지", "부서지", "약해"]
+      }
+    ]
+  },
+  {
+    "id": "bruising",
+    "ko": ["멍", "타박상", "피멍", "푸른멍"],
+    "en": ["bruising", "bruise", "contusion", "ecchymosis", "skin discoloration"],
+    "token_sets": [
+      {
+        "part1": ["피부", "몸", "팔", "다리"],
+        "part2": ["멍", "붉", "푸르", "타박상", "멍자국"]
+      }
+    ]
+  },
+  {
+    "id": "burning_micturition",
+    "ko": ["소변통증", "소변쌀때아픔", "소변따가움", "소변화끈거림"],
+    "en": ["burning urination", "burning while peeing", "painful urination", "dysuria"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌", "고추", "꼬추", "음경"],
+        "part2": ["따갑", "화끈", "아프", "쓰리", "따가움", "화끈거림", "아파", "쓰림", "쓰려", "쓰린"]
+      }
+    ]
+  },
+  {
+    "id": "chest_pain",
+    "ko": ["가슴통증", "가슴아픔", "흉통", "가슴찌름"],
+    "en": ["chest pain", "thoracic pain", "pain in chest", "pressure in chest"],
+    "token_sets": [
+      {
+        "part1": ["가슴", "흉부", "심장"],
+        "part2": ["아프", "찌르", "답답", "통증", "아파", "찌릿", "찌릿거림"]
+      }
+    ]
+  },
+  {
+    "id": "chills",
+    "ko": ["한기", "춥고떨림", "몸이오싹", "몸떨림"],
+    "en": ["chills", "shivering", "cold feeling", "sudden cold", "feeling cold"],
+    "token_sets": [
+      {
+        "part1": ["몸", "등", "팔다리"],
+        "part2": ["춥", "떨리", "한기", "오싹"]
+      }
+    ]
+  },
+  {
+    "id": "cold_hands_and_feet",
+    "ko": ["손발차가움", "손발시림", "손시림", "발시림"],
+    "en": ["cold hands and feet", "chilly hands and feet", "cold limbs", "cold extremities"],
+    "token_sets": [
+      {
+        "part1": ["손", "발", "손발", "팔", "다리"],
+        "part2": ["차갑", "차가", "시리", "춥"]
+      }
+    ]
+  },
+  {
+    "id": "coma",
+    "ko": ["혼수상태", "의식없음", "깨어나지않음"],
+    "en": ["coma", "unconscious", "loss of consciousness", "unresponsive"],
+    "token_sets": [
+      {
+        "part1": ["사람", "환자", "아이", "몸", "의식"],
+        "part2": ["없", "반응없", "안깨어", "깨어나지", "기절"]
+      }
+    ]
+  },
+  {
+    "id": "congestion",
+    "ko": ["코막힘", "비강막힘", "막힌코"],
+    "en": ["nasal congestion", "stuffed nose", "blocked nose", "nasal blockage"],
+    "token_sets": [
+      {
+        "part1": ["코", "비강"],
+        "part2": ["막히", "막혔", "답답"]
+      }
+    ]
+  },
+  {
+    "id": "constipation",
+    "ko": ["변비", "배변힘듦", "대변안나옴"],
+    "en": ["constipation", "difficulty in bowel movement", "no stool", "hard stool"],
+    "token_sets": [
+      {
+        "part1": ["대변", "배변", "변"],
+        "part2": ["안나오", "힘들", "막히"]
+      }
+    ]
+  },
+  {
+    "id": "continuous_feel_of_urine",
+    "ko": ["소변마려움", "계속소변", "소변참기힘듦"],
+    "en": ["frequent urination", "feeling of urination", "urge to urinate"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌"],
+        "part2": ["계속", "마렵", "참기힘들"]
+      }
+    ]
+  },
+  {
+    "id": "continuous_sneezing",
+    "ko": ["재채기계속", "계속재채기", "재채기많이남"],
+    "en": ["continuous sneezing", "frequent sneezing", "sneeze a lot"],
+    "token_sets": [
+      {
+        "part1": ["재채기", "코"],
+        "part2": ["계속", "멈추지않", "많이"]
+      }
+    ]
+  },
+  {
+    "id": "cough",
+    "ko": ["기침", "기침소리", "헛기침", "기침나옴"],
+    "en": ["cough", "coughing", "cough a lot", "keep coughing"],
+    "token_sets": [
+      {
+        "part1": ["기침", "목"],
+        "part2": ["나오", "계속", "멈추지않", "심하"]
+      }
+    ]
+  },
+  {
+    "id": "cramps",
+    "ko": ["경련", "쥐남", "쥐나는통증"],
+    "en": ["cramps", "muscle cramps", "spasms", "leg cramps"],
+    "token_sets": [
+      {
+        "part1": ["다리", "근육", "몸", "허벅지"],
+        "part2": ["쥐나", "경련", "뭉침", "땡기"]
+      }
+    ]
+  },
+  {
+    "id": "dark_urine",
+    "ko": ["소변색이짙음", "소변어두움", "짙은소변"],
+    "en": ["dark urine", "dark-colored urine", "brown urine"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌"],
+        "part2": ["짙", "어두", "갈색"]
+      }
+    ]
+  },
+  {
+    "id": "dehydration",
+    "ko": ["탈수", "수분부족", "물부족"],
+    "en": ["dehydration", "lack of fluids", "low hydration"],
+    "token_sets": [
+      {
+        "part1": ["몸", "입", "피부"],
+        "part2": ["마름", "건조", "수분없", "탈수"]
+      }
+    ]
+  },
+  {
+    "id": "depression",
+    "ko": ["우울감", "의욕없음", "무기력함"],
+    "en": ["depression", "feeling down", "loss of interest", "no motivation"],
+    "token_sets": [
+      {
+        "part1": ["기분", "마음", "정신", "의욕"],
+        "part2": ["우울", "없", "무기력", "침울"]
+      }
+    ]
+  },
+  {
+    "id": "diarrhoea",
+    "ko": ["설사", "배탈", "물설사"],
+    "en": ["diarrhea", "loose stool", "watery stool", "frequent bowel"],
+    "token_sets": [
+      {
+        "part1": ["배", "장", "변", "똥"],
+        "part2": ["설사", "물같", "무름", "자주나오"]
+      }
+    ]
+  },
+  {
+    "id": "distention_of_abdomen",
+    "ko": ["복부팽만", "배부름", "배부름증상"],
+    "en": ["abdominal distention", "bloated abdomen", "swollen belly"],
+    "token_sets": [
+      {
+        "part1": ["배", "복부", "위"],
+        "part2": ["불러", "팽만", "부풀", "더부룩"]
+      }
+    ]
+  },
+  {
+    "id": "dizziness",
+    "ko": ["어지러움", "현기증"],
+    "en": ["dizziness", "dizzy", "lightheaded"],
+    "token_sets": [
+      {
+        "part1": ["머리", "눈앞", "정신"],
+        "part2": ["어질", "어지럽", "빙글", "돌"]
+      }
+    ]
+  },
+  {
+    "id": "drying_and_tingling_lips",
+    "ko": ["입술건조", "입술저림", "입술따가움"],
+    "en": ["dry lips", "tingling lips", "burning lips"],
+    "token_sets": [
+      {
+        "part1": ["입술", "입"],
+        "part2": ["건조", "저리", "따갑", "마름"]
+      }
+    ]
+  },
+  {
+    "id": "dyschromic_patches",
+    "ko": ["피부변색", "색소침착", "색다름"],
+    "en": ["dyschromic patches", "discoloration", "pigmentation patches"],
+    "token_sets": [
+      {
+        "part1": ["피부", "얼굴", "몸", "부위"],
+        "part2": ["색", "얼룩", "변함", "침착"]
+      }
+    ]
+  },
+  {
+    "id": "enlarged_thyroid",
+    "ko": ["목이 부었어요", "갑상선이 커졌어요", "혹이 만져져요"],
+    "en": ["goiter", "enlarged thyroid", "thyroid swelling"],
+    "token_sets": [
+      {
+        "part1": ["목", "갑상선"],
+        "part2": ["부었", "커졌", "만져져", "혹"]
+      }
+    ]
+  },
+  {
+    "id": "excessive_hunger",
+    "ko": ["배가 자주 고파요", "과식해요", "먹어도 배고파요"],
+    "en": ["excessive hunger", "polyphagia", "increased appetite"],
+    "token_sets": [
+      {
+        "part1": ["배", "입", "식욕"],
+        "part2": ["계속 고파", "과식", "많이 먹어", "먹어도 배고파", "고파"]
+      }
+    ]
+  },
+  {
+    "id": "extra_marital_contacts",
+    "ko": ["외도", "배우자 외 성관계", "성적 접촉 이력"],
+    "en": ["extra marital contacts", "sexual exposure", "unprotected sex"],
+    "token_sets": [
+      {
+        "part1": ["성관계", "관계", "접촉"],
+        "part2": ["외도", "바람", "다른 사람", "성적"]
+      }
+    ]
+  },
+  {
+    "id": "family_history",
+    "ko": ["가족 중에 병력이 있어요", "유전이에요", "가족력이 있어요"],
+    "en": ["family history", "genetic history", "hereditary"],
+    "token_sets": [
+      {
+        "part1": ["가족", "부모", "형제"],
+        "part2": ["병력", "유전", "있어", "있었어"]
+      }
+    ]
+  },
+  {
+    "id": "fast_heart_rate",
+    "ko": ["심장이 빨리 뛰어요", "맥박이 빨라요", "두근거려요"],
+    "en": ["fast heart rate", "tachycardia", "rapid pulse"],
+    "token_sets": [
+      {
+        "part1": ["심장", "맥박", "가슴"],
+        "part2": ["빨라", "두근", "세게", "쿵쾅"]
+      }
+    ]
+  },
+  {
+    "id": "fatigue",
+    "ko": ["피로해요", "기운이 없어요", "몸이 천근만근이에요"],
+    "en": ["fatigue", "tiredness", "exhaustion"],
+    "token_sets": [
+      {
+        "part1": ["몸", "기운", "에너지"],
+        "part2": ["없어", "떨어졌어", "피곤", "지쳐"]
+      }
+    ]
+  },
+  {
+    "id": "fever",
+    "ko": ["열이 나요", "열이 조금 있어요", "미열", "열"],
+    "en": ["fever", "mild fever", "low-grade fever"],
+    "token_sets": [
+      {
+        "part1": ["열", "몸", "이마"],
+        "part2": ["있어", "나요", "뜨거워", "미열"]
+      }
+    ]
+  },
+  {
+    "id": "fluid_overload",
+    "ko": ["몸이 붓고 무거워요", "수분이 쌓인 느낌이에요"],
+    "en": ["fluid overload", "excess fluid", "fluid retention"],
+    "token_sets": [
+      {
+        "part1": ["몸", "팔", "다리", "복부"],
+        "part2": ["무거워", "부어", "팽창", "수분"]
+      }
+    ]
+  },
+  {
+    "id": "foul_smell_of_urine",
+    "ko": ["소변 냄새가 심해요", "오줌 냄새가 지려요", "냄새나는 소변"],
+    "en": ["foul smell of urine", "smelly urine", "malodorous urine"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌"],
+        "part2": ["냄새", "지려", "심해", "악취"]
+      }
+    ]
+  },
+  {
+    "id": "headache",
+    "ko": ["머리가 아파요", "두통", "머리가 지끈거려요"],
+    "en": ["headache", "pain in head", "migraine"],
+    "token_sets": [
+      {
+        "part1": ["머리", "두피", "정수리"],
+        "part2": ["아파", "지끈", "욱신", "깨질 듯", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "high_fever",
+    "ko": ["고열", "열이 많이 나요", "머리가 뜨거워요"],
+    "en": ["high fever", "severe fever", "fever above 39C"],
+    "token_sets": [
+      {
+        "part1": ["이마", "머리", "몸", "열"],
+        "part2": ["뜨거워", "끓어", "많이 나", "지끈지끈"]
+      }
+    ]
+  },
+  {
+    "id": "hip_joint_pain",
+    "ko": ["엉덩이 관절이 아파요", "고관절 통증", "앉을 때 아파요"],
+    "en": ["hip joint pain", "coxalgia", "hip discomfort"],
+    "token_sets": [
+      {
+        "part1": ["엉덩이", "고관절", "허리"],
+        "part2": ["아파", "쑤셔", "찌릿", "통증", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "history_of_alcohol_consumption",
+    "ko": ["술을 자주 마셨어요", "과거 음주 이력이 있어요"],
+    "en": ["alcohol consumption", "drinking history", "alcohol intake"],
+    "token_sets": [
+      {
+        "part1": ["술", "음주", "과거"],
+        "part2": ["자주", "마셨어", "이력", "있어"]
+      }
+    ]
+  },
+  {
+    "id": "increased_appetite",
+    "ko": ["식욕이 왕성해요", "계속 배고파요", "먹고 또 먹어요"],
+    "en": ["increased appetite", "excessive eating", "hunger increase"],
+    "token_sets": [
+      {
+        "part1": ["입맛", "식욕", "배"],
+        "part2": ["좋아", "왕성", "계속", "많이"]
+      }
+    ]
+  },
+  {
+    "id": "indigestion",
+    "ko": ["소화가 안 돼요", "더부룩해요", "속이 더부룩해요"],
+    "en": ["indigestion", "dyspepsia", "poor digestion"],
+    "token_sets": [
+      {
+        "part1": ["속", "배", "소화"],
+        "part2": ["안 돼", "불편", "더부룩", "답답","안돼", "안", "안됨"]
+      }
+    ]
+  },
+  {
+    "id": "inflammatory_nails",
+    "ko": ["손톱이 빨갛게 부었어요", "손톱 주위가 염증 있어요", "손톱 염증"],
+    "en": ["paronychia", "inflammatory nails", "nail infection"],
+    "token_sets": [
+      {
+        "part1": ["손톱", "발톱"],
+        "part2": ["붉어", "부었어", "염증", "화끈"]
+      }
+    ]
+  },
+  {
+    "id": "internal_itching",
+    "ko": ["몸속이 간지러워요", "속이 근질거려요", "내부 가려움"],
+    "en": ["internal itching", "deep itching", "pruritus internus"],
+    "token_sets": [
+      {
+        "part1": ["속", "내부", "몸속"],
+        "part2": ["간지러", "가려워", "근질"]
+      }
+    ]
+  },
+  {
+    "id": "irregular_sugar_level",
+    "ko": ["혈당이 불안정해요", "당 수치가 왔다갔다 해요"],
+    "en": ["irregular sugar level", "unstable glucose", "fluctuating blood sugar"],
+    "token_sets": [
+      {
+        "part1": ["혈당", "당", "수치"],
+        "part2": ["불안정", "왔다갔다", "올랐다 내려가"]
+      }
+    ]
+  },
+  {
+    "id": "irritability",
+    "ko": ["짜증이 나요", "예민해졌어요", "화를 잘 내요"],
+    "en": ["irritability", "short temper", "being cranky"],
+    "token_sets": [
+      {
+        "part1": ["기분", "마음", "정신"],
+        "part2": ["짜증", "예민", "날카로워", "화가 나"]
+      }
+    ]
+  },
+  {
+    "id": "irritation_in_anus",
+    "ko": ["항문이 간지러워요", "항문이 따가워요", "항문 가려움"],
+    "en": ["anal itching", "irritation in anus", "pruritus ani"],
+    "token_sets": [
+      {
+        "part1": ["항문", "엉덩이"],
+        "part2": ["간지러", "따가워", "쓰라려", "가려움"]
+      }
+    ]
+  },
+  {
+    "id": "itching",
+    "ko": ["가려워요", "몸이 간지러워요", "계속 긁어요"],
+    "en": ["itching", "skin itch", "pruritus"],
+    "token_sets": [
+      {
+        "part1": ["피부", "몸", "부위"],
+        "part2": ["간지러", "가렵", "긁어"]
+      }
+    ]
+  },
+  {
+    "id": "joint_pain",
+    "ko": ["관절이 아파요", "관절통", "무릎이나 팔꿈치가 쑤셔요"],
+    "en": ["joint pain", "arthralgia", "pain in joints"],
+    "token_sets": [
+      {
+        "part1": ["관절", "무릎", "팔꿈치", "어깨"],
+        "part2": ["아파", "쑤셔", "시큰", "통증", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "knee_pain",
+    "ko": ["무릎이 아파요", "걷기 힘들어요", "무릎이 쑤셔요"],
+    "en": ["knee pain", "pain in knee", "joint ache"],
+    "token_sets": [
+      {
+        "part1": ["무릎"],
+        "part2": ["아파", "쑤셔", "시큰", "굽히기 힘들어", "아프", "통증"]
+      }
+    ]
+  },
+  {
+    "id": "lack_of_concentration",
+    "ko": ["집중이 안 돼요", "정신이 흐려요", "집중력 저하"],
+    "en": ["lack of concentration", "trouble focusing", "poor concentration"],
+    "token_sets": [
+      {
+        "part1": ["정신", "생각", "머리"],
+        "part2": ["흐려", "집중이 안돼", "멍", "산만"]
+      }
+    ]
+  },
+  {
+    "id": "lethargy",
+    "ko": ["무기력해요", "기운이 하나도 없어요", "의욕이 없어요"],
+    "en": ["lethargy", "lack of energy", "sluggishness"],
+    "token_sets": [
+      {
+        "part1": ["몸", "정신", "기운"],
+        "part2": ["없어", "지침", "축 처져", "의욕 없음"]
+      }
+    ]
+  },
+  {
+    "id": "loss_of_appetite",
+    "ko": ["식욕이 없어요", "입맛이 없어요", "먹기 싫어요"],
+    "en": ["loss of appetite", "no appetite", "poor appetite"],
+    "token_sets": [
+      {
+        "part1": ["입맛", "식욕", "먹는"],
+        "part2": ["없어", "떨어져", "싫어", "안 땡겨"]
+      }
+    ]
+  },
+  {
+    "id": "loss_of_balance",
+    "ko": ["균형을 잃어요", "잘 넘어져요", "비틀거려요"],
+    "en": ["loss of balance", "imbalance", "unsteady gait"],
+    "token_sets": [
+      {
+        "part1": ["몸", "다리", "걸음"],
+        "part2": ["비틀", "넘어져", "흔들", "균형 잃"]
+      }
+    ]
+  },
+  {
+    "id": "loss_of_smell",
+    "ko": ["냄새를 못 맡아요", "후각이 없어요", "향을 느끼지 못해요"],
+    "en": ["loss of smell", "anosmia", "no sense of smell"],
+    "token_sets": [
+      {
+        "part1": ["냄새", "후각", "향기"],
+        "part2": ["안 나", "못 맡아", "없어", "느껴지지 않아"]
+      }
+    ]
+  },
+  {
+    "id": "loss_of_taste",
+    "ko": ["맛을 못 느껴요", "입맛이 없어요", "무맛이에요"],
+    "en": ["loss of taste", "ageusia", "no sense of taste"],
+    "token_sets": [
+      {
+        "part1": ["맛", "입맛", "혀"],
+        "part2": ["없어", "안 나", "못 느껴", "무맛"]
+      }
+    ]
+  },  
+  {
+    "id": "malaise",
+    "ko": ["몸이 안 좋아요", "기운이 없어요", "컨디션이 나빠요"],
+    "en": ["malaise", "feeling unwell", "discomfort"],
+    "token_sets": [
+      {
+        "part1": ["몸", "컨디션", "상태"],
+        "part2": ["안 좋아", "나빠", "불편", "기운 없어"]
+      }
+    ]
+  },
+  {
+    "id": "mood_swings",
+    "ko": ["기분이 왔다갔다 해요", "감정 기복이 심해요", "기분 변화가 커요"],
+    "en": ["mood swings", "emotional changes", "emotional instability"],
+    "token_sets": [
+      {
+        "part1": ["기분", "감정", "정서"],
+        "part2": ["변화", "기복", "왔다갔다", "불안정"]
+      }
+    ]
+  },
+  {
+    "id": "movement_stiffness",
+    "ko": ["몸이 뻣뻣해요", "움직이기 힘들어요", "근육이 굳었어요"],
+    "en": ["movement stiffness", "rigidity", "stiffness"],
+    "token_sets": [
+      {
+        "part1": ["몸", "근육", "관절"],
+        "part2": ["뻣뻣", "굳었", "힘들어", "안 펴져"]
+      }
+    ]
+  },
+  {
+    "id": "mucoid_sputum",
+    "ko": ["점액성 가래", "가래가 끈적여요", "미끈한 가래"],
+    "en": ["mucoid sputum", "mucous phlegm", "sticky sputum"],
+    "token_sets": [
+      {
+        "part1": ["가래", "목", "기침"],
+        "part2": ["점액", "끈적", "미끈", "찐득"]
+      }
+    ]
+  },
+  {
+    "id": "muscle_pain",
+    "ko": ["근육통", "근육이 아파요", "몸살이 있어요"],
+    "en": ["muscle pain", "myalgia", "muscle ache"],
+    "token_sets": [
+      {
+        "part1": ["근육", "몸", "팔", "다리"],
+        "part2": ["쑤셔", "아파", "통증", "결림", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "muscle_wasting",
+    "ko": ["근육이 줄어들어요", "근손실", "근육이 빠졌어요"],
+    "en": ["muscle wasting", "muscle loss", "atrophy"],
+    "token_sets": [
+      {
+        "part1": ["근육", "살", "몸"],
+        "part2": ["빠졌", "줄었", "없어졌", "위축"]
+      }
+    ]
+  },  
+  {
+    "id": "muscle_weakness",
+    "ko": ["근육이 약해요", "힘이 빠져요", "버티기 힘들어요"],
+    "en": ["muscle weakness", "lack of muscle strength", "weak muscles"],
+    "token_sets": [
+      {
+        "part1": ["근육", "팔", "다리", "몸"],
+        "part2": ["약해", "힘없어", "빠져", "버티기 힘들어"]
+      }
+    ]
+  },
+  {
+    "id": "nausea",
+    "ko": ["메스꺼워요", "속이 울렁거려요", "토할 것 같아요"],
+    "en": ["nausea", "queasy", "sick to stomach"],
+    "token_sets": [
+      {
+        "part1": ["속", "위", "몸", "토할"],
+        "part2": ["메스꺼", "울렁", "미식거", "메슥껍", "메슥", "같아"]
+      }
+    ]
+  },
+  {
+    "id": "neck_pain",
+    "ko": ["목이 아파요", "뒷목이 뻐근해요", "목 통증"],
+    "en": ["neck pain", "pain in neck", "stiff neck"],
+    "token_sets": [
+      {
+        "part1": ["목", "뒷목", "경추"],
+        "part2": ["아파", "뻐근", "쑤셔", "당겨", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "nodal_skin_eruptions",
+    "ko": ["피부에 혹이 생겨요", "피부결절", "딱딱한 피부염"],
+    "en": ["nodal skin eruptions", "skin nodules", "lumpy rash"],
+    "token_sets": [
+      {
+        "part1": ["피부", "살", "팔", "다리"],
+        "part2": ["혹", "결절", "덩어리", "딱딱"]
+      }
+    ]
+  },
+  {
+    "id": "obesity",
+    "ko": ["비만", "살이 많이 쪘어요", "체중이 너무 나가요"],
+    "en": ["obesity", "overweight", "excess body weight"],
+    "token_sets": [
+      {
+        "part1": ["몸", "체중", "살"],
+        "part2": ["많이", "쪘", "과해", "비만"]
+      }
+    ]
+  },
+  {
+    "id": "pain_behind_the_eyes",
+    "ko": ["눈 뒤가 아파요", "눈이 뻑뻑하고 아파요", "안구 통증"],
+    "en": ["pain behind the eyes", "ocular pain", "eye socket pain"],
+    "token_sets": [
+      {
+        "part1": ["눈", "안구", "눈 뒤"],
+        "part2": ["아파", "쑤셔", "뻑뻑", "찌릿", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "pain_during_bowel_movements",
+    "ko": ["배변 시 아파요", "대변 볼 때 통증이 있어요"],
+    "en": ["pain during bowel movements", "defecation pain", "anal pain while pooping"],
+    "token_sets": [
+      {
+        "part1": ["배변", "대변", "변"],
+        "part2": ["아파", "따가워", "힘들어", "쓰라려", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "pain_in_anal_region",
+    "ko": ["항문이 아파요", "엉덩이 통증", "항문 통증"],
+    "en": ["anal pain", "pain in anal region", "rectal pain"],
+    "token_sets": [
+      {
+        "part1": ["항문", "엉덩이", "똥꼬"],
+        "part2": ["아파", "쑤셔", "찌릿", "따가워", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "painful_walking",
+    "ko": ["걷기 힘들어요", "걸을 때 아파요", "발이 아파서 못 걸어요"],
+    "en": ["painful walking", "pain when walking", "walking difficulty"],
+    "token_sets": [
+      {
+        "part1": ["다리", "발", "걸음", "걷기", "걷는게"],
+        "part2": ["아파", "힘들", "쑤셔", "불편", "아프", "힘들어"]
+      }
+    ]
+  },
+  {
+    "id": "palpitations",
+    "ko": ["심장이 두근거려요", "가슴이 벌렁거려요", "심계항진"],
+    "en": ["palpitations", "heart pounding", "racing heart"],
+    "token_sets": [
+      {
+        "part1": ["심장", "가슴"],
+        "part2": ["두근", "벌렁", "빠르게 뛰", "세게"]
+      }
+    ]
+  },
+  {
+    "id": "passage_of_gases",
+    "ko": ["방귀가 자주 나와요", "가스가 많이 차요", "속이 부글부글해요"],
+    "en": ["passage of gases", "flatulence", "gas in stomach"],
+    "token_sets": [
+      {
+        "part1": ["방귀", "가스", "속"],
+        "part2": ["차", "나와", "부글", "끼"]
+      }
+    ]
+  },
+  {
+    "id": "patches_in_throat",
+    "ko": ["목에 하얀 반점이 있어요", "편도선에 얼룩이 보여요", "목에 염증이 생겼어요"],
+    "en": ["patches in throat", "white spots in throat", "tonsil patches"],
+    "token_sets": [
+      {
+        "part1": ["목", "편도", "인후"],
+        "part2": ["반점", "하얀", "얼룩", "염증"]
+      }
+    ]
+  },
+  {
+    "id": "phlegm",
+    "ko": ["가래가 끓어요", "목에 가래가 있어요", "침을 뱉어도 가래가 나와요"],
+    "en": ["phlegm", "sputum", "mucus"],
+    "token_sets": [
+      {
+        "part1": ["목", "기관지", "가래"],
+        "part2": ["있어", "끓어", "뱉어", "차"]
+      }
+    ]
+  },
+  {
+    "id": "polyuria",
+    "ko": ["소변을 자주 봐요", "소변이 너무 자주 나와요", "화장실을 자주 가요"],
+    "en": ["polyuria", "frequent urination", "excessive urination"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌", "화장실"],
+        "part2": ["자주", "계속", "잦아", "빈번"]
+      }
+    ]
+  },
+  {
+    "id": "prominent_veins_on_calf",
+    "ko": ["종아리에 핏줄이 도드라져요", "다리에 혈관이 튀어나왔어요", "하지정맥류"],
+    "en": ["prominent veins on calf", "varicose veins", "bulging leg veins"],
+    "token_sets": [
+      {
+        "part1": ["종아리", "다리", "혈관"],
+        "part2": ["도드라져", "튀어나와", "굵어", "정맥류"]
+      }
+    ]
+  },
+  {
+    "id": "puffy_face_and_eyes",
+    "ko": ["얼굴이 부었어요", "눈이 퉁퉁 부었어요", "눈두덩이 붓기"],
+    "en": ["puffy face and eyes", "facial swelling", "eyelid edema"],
+    "token_sets": [
+      {
+        "part1": ["눈", "얼굴", "눈두덩이"],
+        "part2": ["부었", "퉁퉁", "부기", "팽창"]
+      }
+    ]
+  },
+  {
+    "id": "pus_filled_pimples",
+    "ko": ["고름이 찬 여드름", "뾰루지에서 고름이 나와요", "화농성 여드름"],
+    "en": ["pus-filled pimples", "acne with pus", "purulent pimples"],
+    "token_sets": [
+      {
+        "part1": ["여드름", "뾰루지", "피부"],
+        "part2": ["고름", "화농", "터졌", "노랗"]
+      }
+    ]
+  },
+  {
+    "id": "receiving_blood_transfusion",
+    "ko": ["수혈을 받은 적이 있어요", "최근에 피를 맞았어요"],
+    "en": ["receiving blood transfusion", "blood transfusion history"],
+    "token_sets": [
+      {
+        "part1": ["수혈", "피", "혈액"],
+        "part2": ["맞았", "받았", "이력", "한 적"]
+      }
+    ]
+  },
+  {
+    "id": "receiving_unsterile_injections",
+    "ko": ["비위생적인 주사를 맞았어요", "깨끗하지 않은 주사"],
+    "en": ["receiving unsterile injections", "dirty injection", "non-sterile injection"],
+    "token_sets": [
+      {
+        "part1": ["주사", "약물", "바늘"],
+        "part2": ["비위생", "더러워", "소독 안된", "불결"]
+      }
+    ]
+  },
+  {
+    "id": "red_sore_around_nose",
+    "ko": ["코 주위가 헐었어요", "코 주변이 빨갛게 부었어요", "콧등 염증"],
+    "en": ["red sore around nose", "nasal sore", "inflamed nose area"],
+    "token_sets": [
+      {
+        "part1": ["코", "콧등", "콧구멍"],
+        "part2": ["빨개", "헐었", "부었", "염증"]
+      }
+    ]
+  },
+  {
+    "id": "red_spots_over_body",
+    "ko": ["몸에 빨간 반점이 생겼어요", "온몸에 붉은 점이 보여요", "붉은 발진이 올라왔어요"],
+    "en": ["red spots over body", "body rash", "red patches on skin"],
+    "token_sets": [
+      {
+        "part1": ["몸", "피부", "등", "가슴", "다리"],
+        "part2": ["반점", "붉은", "발진", "점"]
+      }
+    ]
+  },
+  {
+    "id": "redness_of_eyes",
+    "ko": ["눈이 빨개졌어요", "충혈됐어요", "눈에 염증이 있어요"],
+    "en": ["redness of eyes", "eye redness", "ocular inflammation"],
+    "token_sets": [
+      {
+        "part1": ["눈", "안구", "눈동자"],
+        "part2": ["빨개", "충혈", "붉어", "염증"]
+      }
+    ]
+  },
+  
+  {
+    "id": "restlessness",
+    "ko": ["가만히 있지 못해요", "안절부절 못해요", "불안해서 계속 움직여요"],
+    "en": ["restlessness", "anxious movement", "fidgety"],
+    "token_sets": [
+      {
+        "part1": ["몸", "사람", "행동"],
+        "part2": ["안절부절", "가만히", "못 있어", "움직여"]
+      }
+    ]
+  },
+  {
+    "id": "runny_nose",
+    "ko": ["콧물이 흘러요", "계속 콧물이 나요", "맑은 콧물이 나와요"],
+    "en": ["runny nose", "rhinorrhea", "nasal discharge"],
+    "token_sets": [
+      {
+        "part1": ["코", "콧물"],
+        "part2": ["흘러", "계속", "맑아", "나와"]
+      }
+    ]
+  },
+  {
+    "id": "rusty_sputum",
+    "ko": ["가래 색이 갈색이에요", "녹슨 색의 가래가 나와요"],
+    "en": ["rusty sputum", "brown sputum", "iron-colored phlegm"],
+    "token_sets": [
+      {
+        "part1": ["가래", "기침", "목"],
+        "part2": ["갈색", "녹슨", "붉은", "짙은"]
+      }
+    ]
+  },
+  {
+    "id": "scurrying",
+    "ko": ["안절부절 못해요", "초조해서 계속 움직여요", "불안해서 가만히 못 있어요"],
+    "en": ["scurrying", "fidgetiness", "restless movement"],
+    "token_sets": [
+      {
+        "part1": ["몸", "행동", "자세"],
+        "part2": ["안절부절", "가만히 못", "움직여", "초조해"]
+      }
+    ]
+  },  
+  {
+    "id": "shivering",
+    "ko": ["몸이 떨려요", "한기가 들어요", "오한이 들어요"],
+    "en": ["shivering", "chills", "trembling"],
+    "token_sets": [
+      {
+        "part1": ["몸", "전신", "팔다리"],
+        "part2": ["떨려", "한기", "오한", "덜덜"]
+      }
+    ]
+  },
+  {
+    "id": "silver_like_dusting",
+    "ko": ["은가루 같은 각질이 생겨요", "비늘처럼 일어나요"],
+    "en": ["silver-like dusting", "silvery scales", "psoriasis scale"],
+    "token_sets": [
+      {
+        "part1": ["피부", "표면", "살", "은색"],
+        "part2": ["은색", "가루", "비늘", "하얗게", "각질"]
+      }
+    ]
+  },
+  {
+    "id": "sinus_pressure",
+    "ko": ["코 옆이 답답해요", "부비동에 압력이 느껴져요", "얼굴이 무거워요"],
+    "en": ["sinus pressure", "sinus congestion", "facial pressure"],
+    "token_sets": [
+      {
+        "part1": ["코", "부비동", "이마", "볼"],
+        "part2": ["답답", "무거워", "눌려", "압력", "압박"]
+      }
+    ]
+  },
+  {
+    "id": "skin_peeling",
+    "ko": ["피부가 벗겨져요", "각질이 벗겨져요", "껍질이 일어나요"],
+    "en": ["skin peeling", "peeling skin", "skin flaking"],
+    "token_sets": [
+      {
+        "part1": ["피부", "살", "표면"],
+        "part2": ["벗겨져", "일어나", "각질", "떨어져"]
+      }
+    ]
+  },
+  {
+    "id": "skin_rash",
+    "ko": ["피부에 발진이 있어요", "몸에 두드러기가 났어요", "붉은 반점이 생겼어요"],
+    "en": ["skin rash", "rash", "hives"],
+    "token_sets": [
+      {
+        "part1": ["피부", "몸", "부위"],
+        "part2": ["발진", "두드러기", "반점", "가려움", "가렵"]
+      }
+    ]
+  },
+  {
+    "id": "slurred_speech",
+    "ko": ["말이 어눌해요", "발음이 흐려요", "말이 꼬여요"],
+    "en": ["slurred speech", "unclear speech", "blurred words"],
+    "token_sets": [
+      {
+        "part1": ["말", "언어", "발음"],
+        "part2": ["어눌", "흐려", "꼬여", "이상"]
+      }
+    ]
+  },
+  {
+    "id": "small_dents_in_nails",
+    "ko": ["손톱에 움푹 파인 자국이 있어요", "손톱이 울퉁불퉁해요"],
+    "en": ["small dents in nails", "nail pitting", "nail depressions"],
+    "token_sets": [
+      {
+        "part1": ["손톱", "발톱"],
+        "part2": ["움푹", "파여", "자국", "울퉁불퉁"]
+      }
+    ]
+  },
+  {
+    "id": "spinning_movements",
+    "ko": ["세상이 빙글빙글 돌아요", "현기증이 나요", "어지러워서 도는 느낌이에요"],
+    "en": ["spinning movements", "vertigo", "dizziness"],
+    "token_sets": [
+      {
+        "part1": ["세상", "머리", "몸", "눈앞"],
+        "part2": ["돌아", "빙글", "현기증", "어지러"]
+      }
+    ]
+  },
+  {
+    "id": "spotting_urination",
+    "ko": ["소변에 피가 비쳐요", "소변이 붉어요", "혈뇨가 있어요"],
+    "en": ["spotting urination", "hematuria", "blood in urine"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌"],
+        "part2": ["피", "붉어", "빨개", "비쳐"]
+      }
+    ]
+  },
+  {
+    "id": "stiff_neck",
+    "ko": ["목이 뻣뻣해요", "고개가 잘 안 돌아가요", "목이 굳었어요"],
+    "en": ["stiff neck", "neck stiffness", "rigid neck"],
+    "token_sets": [
+      {
+        "part1": ["목", "경추", "고개"],
+        "part2": ["뻣뻣", "굳었", "안 돌아가", "딱딱"]
+      }
+    ]
+  },
+  {
+    "id": "stomach_bleeding",
+    "ko": ["속에서 피가 나요", "위에서 출혈이 있어요", "토했더니 피가 나왔어요"],
+    "en": ["stomach bleeding", "gastrointestinal bleeding", "gastric hemorrhage"],
+    "token_sets": [
+      {
+        "part1": ["속", "위", "배"],
+        "part2": ["피", "출혈", "혈", "토했더니"]
+      }
+    ]
+  },
+  {
+    "id": "stomach_pain",
+    "ko": ["속이 쓰려요", "위가 아파요", "위 통증이 있어요", "속이 따가워요"],
+    "en": ["stomach pain", "gastric pain", "pain in the stomach"],
+    "token_sets": [
+      {
+        "part1": ["속", "위", "명치"],
+        "part2": ["쓰려", "아파", "따가워", "화끈거려", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "sunken_eyes",
+    "ko": ["눈이 들어갔어요", "눈이 푹 꺼졌어요", "눈이 움푹 들어갔어요"],
+    "en": ["sunken eyes", "hollow eyes", "deep-set eyes"],
+    "token_sets": [
+      {
+        "part1": ["눈", "눈동자", "안구"],
+        "part2": ["꺼졌", "들어갔", "움푹", "파여"]
+      }
+    ]
+  },
+  {
+    "id": "sweating",
+    "ko": ["땀이 많이 나요", "식은땀이 나요", "땀이 멈추지 않아요"],
+    "en": ["sweating", "perspiration", "excessive sweat"],
+    "token_sets": [
+      {
+        "part1": ["몸", "이마", "겨드랑이"],
+        "part2": ["땀", "흘려", "식은땀", "젖어"]
+      }
+    ]
+  },
+  {
+    "id": "swelled_lymph_nodes",
+    "ko": ["림프절이 부었어요", "목에 혹이 만져져요", "임파선이 부었어요"],
+    "en": ["swollen lymph nodes", "lymphadenopathy", "enlarged lymph node"],
+    "token_sets": [
+      {
+        "part1": ["림프", "임파선", "목"],
+        "part2": ["부었", "혹", "커졌", "만져"]
+      }
+    ]
+  },
+  {
+    "id": "swelling_joints",
+    "ko": ["관절이 부었어요", "무릎이 퉁퉁 부었어요", "팔꿈치에 붓기가 있어요"],
+    "en": ["swelling joints", "joint swelling", "puffy joints"],
+    "token_sets": [
+      {
+        "part1": ["관절", "무릎", "팔꿈치", "발목"],
+        "part2": ["부었", "퉁퉁", "붓기", "부종"]
+      }
+    ]
+  },
+  {
+    "id": "swelling_of_stomach",
+    "ko": ["복부 부종", "배가 부었어요", "복부가 심하게 부어요"],
+    "en": ["abdominal swelling", "swelling of stomach", "abdominal bloating"],
+    "token_sets": [
+      {
+        "part1": ["복부", "배", "속"],
+        "part2": ["부었", "팽창", "부종", "더부룩"]
+      }
+    ]
+  },
+  {
+    "id": "swollen_blood_vessels",
+    "ko": ["핏줄이 튀어나왔어요", "혈관이 부었어요", "혈관이 두드러져요"],
+    "en": ["swollen blood vessels", "engorged veins", "visible blood vessels"],
+    "token_sets": [
+      {
+        "part1": ["혈관", "핏줄", "정맥"],
+        "part2": ["부었", "튀어나왔", "도드라져", "두드러져"]
+      }
+    ]
+  },
+  {
+    "id": "swollen_extremities",
+    "ko": ["손발이 부었어요", "팔이나 다리가 퉁퉁 부었어요", "사지 부종이 있어요"],
+    "en": ["swollen extremities", "extremity edema", "limb swelling"],
+    "token_sets": [
+      {
+        "part1": ["손", "발", "팔", "다리"],
+        "part2": ["부었", "부종", "퉁퉁", "붓기"]
+      }
+    ]
+  },
+  {
+    "id": "swollen_legs",
+    "ko": ["다리가 부었어요", "다리 부종이 있어요", "다리가 무거워요"],
+    "en": ["swollen legs", "leg edema", "leg swelling"],
+    "token_sets": [
+      {
+        "part1": ["다리", "종아리", "허벅지"],
+        "part2": ["부었", "부종", "무거워", "붓기"]
+      }
+    ]
+  },
+  {
+    "id": "throat_irritation",
+    "ko": ["목이 따가워요", "목이 간질거려요", "목이 자극돼요"],
+    "en": ["throat irritation", "scratchy throat", "throat discomfort"],
+    "token_sets": [
+      {
+        "part1": ["목", "인후"],
+        "part2": ["따가워", "간질", "불편", "자극"]
+      }
+    ]
+  },
+  {
+    "id": "tiredness",
+    "ko": ["피곤해요", "기운이 없어요", "쉽게 지쳐요", "만성 피로가 있어요"],
+    "en": ["tiredness", "fatigue", "exhaustion", "chronic fatigue"],
+    "token_sets": [
+      {
+        "part1": ["몸", "기운", "에너지", "컨디션"],
+        "part2": ["피곤", "없어", "지쳐", "떨어져"]
+      }
+    ]
+  },
+  {
+    "id": "toxic_look_(typhos)",
+    "ko": ["아파 보이는 얼굴이에요", "얼굴이 창백하고 지쳐 보여요", "혼미한 인상이에요"],
+    "en": ["toxic look", "ill appearance", "typhoid-like face"],
+    "token_sets": [
+      {
+        "part1": ["얼굴", "표정", "상태"],
+        "part2": ["창백", "지쳐", "혼미", "아파 보여", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "ulcers_on_tongue",
+    "ko": ["혀에 궤양이 있어요", "혀가 헐었어요", "입안이 아파요"],
+    "en": ["ulcers on tongue", "tongue sore", "oral ulcer"],
+    "token_sets": [
+      {
+        "part1": ["혀", "입안", "입"],
+        "part2": ["궤양", "헐었", "아파", "염증", "아프"]
+      }
+    ]
+  },
+  {
+    "id": "unsteadiness",
+    "ko": ["몸이 휘청거려요", "균형 잡기 힘들어요", "불안정하게 움직여요"],
+    "en": ["unsteadiness", "loss of balance", "wobbly movement"],
+    "token_sets": [
+      {
+        "part1": ["몸", "다리", "걸음"],
+        "part2": ["불안정", "휘청", "흔들", "균형 못 잡"]
+      }
+    ]
+  },
+  {
+    "id": "visual_disturbances",
+    "ko": ["시야 이상", "눈에 이상이 있어요", "시각 장애가 생겼어요", "눈앞이 이상해요"],
+    "en": ["visual disturbances", "visual problems", "vision disorder"],
+    "token_sets": [
+      {
+        "part1": ["시야", "눈", "시각", "시력"],
+        "part2": ["이상", "문제", "장애", "변화"]
+      }
+    ]
+  },
+  {
+    "id": "vomiting",
+    "ko": ["토했어요", "구토했어요", "음식을 토했어요"],
+    "en": ["vomiting", "throwing up", "emesis"],
+    "token_sets": [
+      {
+        "part1": ["음식", "속", "입"],
+        "part2": ["토했", "구토", "올라와", "뱉었"]
+      }
+    ]
+  },
+  {
+    "id": "watering_from_eyes",
+    "ko": ["눈에서 눈물이 나요", "눈물이 계속 흘러요", "눈이 자꾸 젖어요"],
+    "en": ["watering from eyes", "eye watering", "excessive tearing"],
+    "token_sets": [
+      {
+        "part1": ["눈", "눈가", "안구"],
+        "part2": ["눈물", "흘러", "젖어", "흐르"]
+      }
+    ]
+  },
+  {
+    "id": "weakness_of_one_body_side",
+    "ko": ["몸 한쪽에 힘이 없어요", "왼쪽/오른쪽 팔다리에 마비가 와요", "반신이 약해요"],
+    "en": ["weakness of one body side", "hemiparesis", "unilateral weakness"],
+    "token_sets": [
+      {
+        "part1": ["한쪽", "왼쪽", "오른쪽", "반신"],
+        "part2": ["약해", "힘이 없어", "마비", "저려"]
+      }
+    ]
+  },
+  {
+    "id": "weakness_of_one_body_side",
+    "ko": ["몸 한쪽에 힘이 없어요", "반신 마비가 있어요", "한쪽 팔다리가 약해요"],
+    "en": ["weakness of one body side", "unilateral weakness", "hemiparesis"],
+    "token_sets": [
+      {
+        "part1": ["한쪽", "반신", "왼쪽", "오른쪽"],
+        "part2": ["약해", "힘이 없어", "마비", "저려"]
+      }
+    ]
+  },  
+  {
+    "id": "weight_gain",
+    "ko": ["살이 쪘어요", "체중이 늘었어요", "몸무게가 증가했어요"],
+    "en": ["weight gain", "increased weight", "weight increase"],
+    "token_sets": [
+      {
+        "part1": ["체중", "몸무게", "살"],
+        "part2": ["늘었", "쪘", "증가", "불었"]
+      }
+    ]
+  },
+  {
+    "id": "weight_loss",
+    "ko": ["살이 빠졌어요", "체중이 줄었어요", "몸무게가 감소했어요"],
+    "en": ["weight loss", "decreased weight", "weight reduction"],
+    "token_sets": [
+      {
+        "part1": ["체중", "몸무게", "살"],
+        "part2": ["빠졌", "줄었", "감소", "빠르게"]
+      }
+    ]
+  },
+  {
+    "id": "yellow_crust_ooze",
+    "ko": ["노란 고름이 흘러요", "상처에 노란 진물이 나와요", "피부에 황색 분비물이 있어요"],
+    "en": ["yellow crust ooze", "yellow pus discharge", "yellow fluid from wound"],
+    "token_sets": [
+      {
+        "part1": ["상처", "피부", "부위", "노란", "누런", "황색", "노란색", "누런색"],
+        "part2": ["노란", "진물", "고름", "분비"]
+      }
+    ]
+  },
+  {
+    "id": "yellow_urine",
+    "ko": ["소변 색이 진해요", "소변이 노래요", "오줌이 진한 노란색이에요"],
+    "en": ["yellow urine", "dark yellow urine", "deep yellow pee"],
+    "token_sets": [
+      {
+        "part1": ["소변", "오줌", "요"],
+        "part2": ["노랗", "진해", "짙어", "색이"]
+      }
+    ]
+  },
+  {
+    "id": "yellowing_of_eyes",
+    "ko": ["눈이 노래졌어요", "눈동자가 누래요", "공막이 노랗게 변했어요"],
+    "en": ["yellowing of eyes", "yellow sclera", "eye jaundice"],
+    "token_sets": [
+      {
+        "part1": ["눈", "공막", "눈동자"],
+        "part2": ["노랗", "변했", "황달", "색이"]
+      }
+    ]
+  },
+  {
+    "id": "yellowish_skin",
+    "ko": ["피부가 노랗게 변했어요", "몸이 노래졌어요", "얼굴이 노래요"],
+    "en": ["yellowish skin", "skin jaundice", "yellow tint to skin"],
+    "token_sets": [
+      {
+        "part1": ["피부", "몸", "얼굴"],
+        "part2": ["노랗", "노래졌", "황달", "변했"]
+      }
+    ]
+  }
+]

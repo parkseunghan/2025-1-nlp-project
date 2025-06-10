@@ -291,14 +291,14 @@ Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, high_fever, breathl
 Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, high_fever, sweating, loss_of_appetite, fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
 Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, breathlessness, sweating, loss_of_appetite, fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
 Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus),null,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, belly_pain,null,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
-Typhoid, chills, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, headache, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null
-Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea,,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, toxic_look_(typhus),,null,null,null,null,null,null,null
+Typhoid, chills, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus),,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, abdominal_pain, diarrhoea, toxic_look_(typhus),,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus),,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus),,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus),,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, diarrhoea, toxic_look_(typhus), abdominal_pain,null,null,null,null,null,null,null
 Urinary tract infection, burning_micturition, bladder_discomfort, foul_smell_of_urine, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null
 Urinary tract infection, bladder_discomfort, foul_smell_of_urine, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null,null
 Urinary tract infection, burning_micturition, foul_smell_of_urine, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null,null

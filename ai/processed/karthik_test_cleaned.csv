@@ -38,6 +38,6 @@ peptic_ulcer_disease,"['abdominal_pain', 'indigestion', 'internal_itching', 'los
 pneumonia,"['breathlessness', 'chest_pain', 'chills', 'cough', 'fast_heart_rate', 'fatigue', 'high_fever', 'malaise', 'phlegm', 'rusty_sputum', 'sweating']"
 psoriasis,"['inflammatory_nails', 'joint_pain', 'silver_like_dusting', 'skin_peeling', 'skin_rash', 'small_dents_in_nails']"
 tuberculosis,"['blood_in_sputum', 'breathlessness', 'chest_pain', 'chills', 'cough', 'fatigue', 'high_fever', 'loss_of_appetite', 'malaise', 'fever', 'phlegm', 'sweating', 'swelled_lymph_nodes', 'vomiting', 'weight_loss', 'yellowing_of_eyes']"
-typhoid,"['abdominal_pain', 'belly_pain', 'chills', 'constipation', 'diarrhoea', 'fatigue', 'headache', 'high_fever', 'nausea', 'toxic_look_(typhus)', 'vomiting']"
+typhoid,"['abdominal_pain', 'chills', 'constipation', 'diarrhoea', 'fatigue', 'headache', 'high_fever', 'nausea', 'toxic_look_(typhus)', 'vomiting']"
 urinary_tract_infection,"['bladder_discomfort', 'burning_micturition', 'continuous_feel_of_urine', 'foul_smell_of_urine']"
 varicose_veins,"['bruising', 'cramps', 'fatigue', 'obesity', 'prominent_veins_on_calf', 'swollen_blood_vessels', 'swollen_legs']"

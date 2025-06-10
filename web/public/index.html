@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>🩺 질병 예측기</title>
+</head>
+<body>
+  <h2>증상 입력</h2>
+  <textarea id="input" rows="4" cols="50">머리가 아프고 토할 것 같아요</textarea>
+  <br />
+  <button id="btn1" onclick="predict('/predict')">예측하기 (LLM+NLP)</button>
+  <button id="btn2" onclick="predict('/predict2')">예측하기 (NLP)</button>
+
+  <h3>⏳ 추출된 증상</h3>
+  <pre id="symptoms"></pre>
+
+  <h3>🧪 예측 결과</h3>
+  <pre id="result"></pre>
+
+  <script>
+    async function predict(endpoint) {
+      const text = document.getElementById("input").value;
+      const symptomsEl = document.getElementById("symptoms");
+      const resultEl = document.getElementById("result");
+      const btn1 = document.getElementById("btn1");
+      const btn2 = document.getElementById("btn2");
+
+      symptomsEl.textContent = "⏳ 증상 추출 중...";
+      resultEl.textContent = "";
+      btn1.disabled = true;
+      btn2.disabled = true;
+
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok || !data.symptoms) {
+          symptomsEl.textContent = `❌ 오류: ${data.message || data.error || "서버 오류 발생"}`;
+          resultEl.textContent = "";
+        } else {
+          symptomsEl.textContent = JSON.stringify(data.symptoms, null, 2);
+          resultEl.textContent = JSON.stringify(data.result, null, 2);
+        }
+      } catch (err) {
+        symptomsEl.textContent = `❌ 네트워크 오류: ${err.message}`;
+        resultEl.textContent = "";
+      } finally {
+        btn1.disabled = false;
+        btn2.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>

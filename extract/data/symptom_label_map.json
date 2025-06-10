@@ -1,0 +1,662 @@
+[
+  {
+    "id": "abdominal_pain",
+    "en": "abdominal pain",
+    "ko": "복통"
+  },
+  {
+    "id": "abnormal_menstruation",
+    "en": "abnormal menstruation",
+    "ko": "월경 이상"
+  },
+  {
+    "id": "acidity",
+    "en": "hyperchylia",
+    "ko": "위산과다"
+  },
+  {
+    "id": "acute_liver_failure",
+    "en": "acute liver failure",
+    "ko": "급성 간부전"
+  },
+  {
+    "id": "altered_sensorium",
+    "en": "altered mental status",
+    "ko": "의식 변화"
+  },
+  {
+    "id": "anxiety",
+    "en": "anxiety",
+    "ko": "불안"
+  },
+  {
+    "id": "back_pain",
+    "en": "lumbago",
+    "ko": "요통"
+  },
+  {
+    "id": "blackheads",
+    "en": "comedo",
+    "ko": "면포"
+  },
+  {
+    "id": "bladder_discomfort",
+    "en": "bladder discomfort",
+    "ko": "방광 불편감"
+  },
+  {
+    "id": "blister",
+    "en": "blister",
+    "ko": "물집"
+  },
+  {
+    "id": "blood_in_sputum",
+    "en": "bloody sputum",
+    "ko": "혈성가래"
+  },
+  {
+    "id": "bloody_stool",
+    "en": "hematochezia",
+    "ko": "혈변"
+  },
+  {
+    "id": "blurred_and_distorted_vision",
+    "en": "blurred vision",
+    "ko": "흐린시력"
+  },
+  {
+    "id": "breathlessness",
+    "en": "dyspnea",
+    "ko": "호흡곤란"
+  },
+  {
+    "id": "brittle_nails",
+    "en": "brittle nails",
+    "ko": "손발톱이 잘 부러짐"
+  },
+  {
+    "id": "bruising",
+    "en": "bruise",
+    "ko": "멍"
+  },
+  {
+    "id": "burning_micturition",
+    "en": "dysuria",
+    "ko": "배뇨통"
+  },
+  {
+    "id": "chest_pain",
+    "en": "chest pain",
+    "ko": "흉통"
+  },
+  {
+    "id": "chills",
+    "en": "chill",
+    "ko": "오한"
+  },
+  {
+    "id": "cold_hands_and_feet",
+    "en": "cold hands and feet",
+    "ko": "손발이 차가움"
+  },
+  {
+    "id": "coma",
+    "en": "coma",
+    "ko": "혼수"
+  },
+  {
+    "id": "congestion",
+    "en": "congestion",
+    "ko": "충혈"
+  },
+  {
+    "id": "constipation",
+    "en": "constipation",
+    "ko": "변비"
+  },
+  {
+    "id": "continuous_feel_of_urine",
+    "en": "residual urine",
+    "ko": "잔뇨"
+  },
+  {
+    "id": "continuous_sneezing",
+    "en": "continuous sneezing",
+    "ko": "재채기를 계속함"
+  },
+  {
+    "id": "cough",
+    "en": "cough",
+    "ko": "기침"
+  },
+  {
+    "id": "cramps",
+    "en": "cramps",
+    "ko": "경련"
+  },
+  {
+    "id": "dark_urine",
+    "en": "dark urine",
+    "ko": "진한 색 소변"
+  },
+  {
+    "id": "dehydration",
+    "en": "dehydration",
+    "ko": "탈수"
+  },
+  {
+    "id": "depression",
+    "en": "depression",
+    "ko": "우울증"
+  },
+  {
+    "id": "diarrhoea",
+    "en": "diarrhoea",
+    "ko": "설사"
+  },
+  {
+    "id": "distention_of_abdomen",
+    "en": "abdominal distention",
+    "ko": "복부 팽만"
+  },
+  {
+    "id": "dizziness",
+    "en": "dizziness",
+    "ko": "어지러움"
+  },
+  {
+    "id": "drying_and_tingling_lips",
+    "en": "drying and tingling lips",
+    "ko": "입술 건조 및 저림"
+  },
+  {
+    "id": "dyschromic_patches",
+    "en": "dyschromic patches",
+    "ko": "피부 색 변화"
+  },
+  {
+    "id": "enlarged_thyroid",
+    "en": "goiter",
+    "ko": "갑상샘종"
+  },
+  {
+    "id": "excessive_hunger",
+    "en": "hyperorexia",
+    "ko": "식욕과잉"
+  },
+  {
+    "id": "extra_marital_contacts",
+    "en": "extra marital contacts",
+    "ko": "외부 관계"
+  },
+  {
+    "id": "family_history",
+    "en": "family history",
+    "ko": "가족력"
+  },
+  {
+    "id": "fast_heart_rate",
+    "en": "tachycardia",
+    "ko": "빠른 심장 박동"
+  },
+  {
+    "id": "fatigue",
+    "en": "fatigue",
+    "ko": "피로"
+  },
+  {
+    "id": "fever",
+    "en": "fever",
+    "ko": "열"
+  },
+  {
+    "id": "fluid_overload",
+    "en": "fluid overload",
+    "ko": "수분 과다"
+  },
+  {
+    "id": "foul_smell_of_urine",
+    "en": "foul smell of urine",
+    "ko": "소변의 악취"
+  },
+  {
+    "id": "headache",
+    "en": "headache",
+    "ko": "두통"
+  },
+  {
+    "id": "high_fever",
+    "en": "high fever",
+    "ko": "고열"
+  },
+  {
+    "id": "hip_joint_pain",
+    "en": "coxalgia",
+    "ko": "고관절 통증"
+  },
+  {
+    "id": "history_of_alcohol_consumption",
+    "en": "history of alcohol consumption",
+    "ko": "음주 이력"
+  },
+  {
+    "id": "increased_appetite",
+    "en": "polyphagia",
+    "ko": "다식증"
+  },
+  {
+    "id": "indigestion",
+    "en": "indigestion",
+    "ko": "소화 불량"
+  },
+  {
+    "id": "inflammatory_nails",
+    "en": "paronychia",
+    "ko": "손톱 주위염"
+  },
+  {
+    "id": "internal_itching",
+    "en": "pruritus",
+    "ko": "내부 가려움"
+  },
+  {
+    "id": "irregular_sugar_level",
+    "en": "dysglycemia",
+    "ko": "혈당 불균형"
+  },
+  {
+    "id": "irritability",
+    "en": "irritability",
+    "ko": "과민성"
+  },
+  {
+    "id": "irritation_in_anus",
+    "en": "irritation in anus",
+    "ko": "항문 가려움"
+  },
+  {
+    "id": "itching",
+    "en": "itching",
+    "ko": "가려움"
+  },
+  {
+    "id": "joint_pain",
+    "en": "joint pain",
+    "ko": "관절 통증"
+  },
+  {
+    "id": "knee_pain",
+    "en": "knee pain",
+    "ko": "무릎 통증"
+  },
+  {
+    "id": "lack_of_concentration",
+    "en": "lack of concentration",
+    "ko": "집중력 저하"
+  },
+  {
+    "id": "lethargy",
+    "en": "lethargy",
+    "ko": "졸음증"
+  },
+  {
+    "id": "loss_of_appetite",
+    "en": "anorexia",
+    "ko": "식욕부진"
+  },
+  {
+    "id": "loss_of_balance",
+    "en": "loss of balance",
+    "ko": "불균형"
+  },
+  {
+    "id": "loss_of_smell",
+    "en": "anosmia",
+    "ko": "후각상실"
+  },
+  {
+    "id": "loss_of_taste",
+    "en": "ageusia",
+    "ko": "미각소실"
+  },
+  {
+    "id": "malaise",
+    "en": "malaise",
+    "ko": "권태감"
+  },
+  {
+    "id": "mood_swings",
+    "en": "mood swings",
+    "ko": "기분 변화"
+  },
+  {
+    "id": "movement_stiffness",
+    "en": "rigidity",
+    "ko": "경직성"
+  },
+  {
+    "id": "mucoid_sputum",
+    "en": "mucoid sputum",
+    "ko": "점액성 가래"
+  },
+  {
+    "id": "muscle_pain",
+    "en": "muscle pain",
+    "ko": "근육통"
+  },
+  {
+    "id": "muscle_wasting",
+    "en": "muscle atrophy",
+    "ko": "근위축"
+  },
+  {
+    "id": "muscle_weakness",
+    "en": "muscle weakness",
+    "ko": "근력 저하"
+  },
+  {
+    "id": "nausea",
+    "en": "nausea",
+    "ko": "메스꺼움"
+  },
+  {
+    "id": "neck_pain",
+    "en": "cervical pain",
+    "ko": "경부 통증"
+  },
+  {
+    "id": "nodal_skin_eruptions",
+    "en": "nodular skin eruption",
+    "ko": "결절성 피부 발진"
+  },
+  {
+    "id": "obesity",
+    "en": "obesity",
+    "ko": "비만"
+  },
+  {
+    "id": "pain_behind_the_eyes",
+    "en": "retro-orbital pain",
+    "ko": "안구 뒤 통증"
+  },
+  {
+    "id": "pain_during_bowel_movements",
+    "en": "pain on defecation",
+    "ko": "배변 시 통증"
+  },
+  {
+    "id": "pain_in_anal_region",
+    "en": "anal pain",
+    "ko": "항문 통증"
+  },
+  {
+    "id": "painful_walking",
+    "en": "claudication",
+    "ko": "보행 시 통증"
+  },
+  {
+    "id": "palpitations",
+    "en": "palpitations",
+    "ko": "심계항진"
+  },
+  {
+    "id": "passage_of_gases",
+    "en": "flatulence",
+    "ko": "가스 배출"
+  },
+  {
+    "id": "patches_in_throat",
+    "en": "pharyngeal exudates",
+    "ko": "인두 삼출물"
+  },
+  {
+    "id": "phlegm",
+    "en": "sputum",
+    "ko": "가래"
+  },
+  {
+    "id": "polyuria",
+    "en": "polyuria",
+    "ko": "다뇨"
+  },
+  {
+    "id": "prominent_veins_on_calf",
+    "en": "varicose veins",
+    "ko": "하지 정맥류"
+  },
+  {
+    "id": "puffy_face_and_eyes",
+    "en": "facial puffiness",
+    "ko": "안면 부종"
+  },
+  {
+    "id": "pus_filled_pimples",
+    "en": "pustules",
+    "ko": "고름이 찬 여드름"
+  },
+  {
+    "id": "receiving_blood_transfusion",
+    "en": "history of blood transfusion",
+    "ko": "수혈 이력"
+  },
+  {
+    "id": "receiving_unsterile_injections",
+    "en": "history of unsterile injection",
+    "ko": "비멸균 주사 이력"
+  },
+  {
+    "id": "red_sore_around_nose",
+    "en": "nasal ulceration",
+    "ko": "비강 궤양"
+  },
+  {
+    "id": "red_spots_over_body",
+    "en": "petechiae",
+    "ko": "점상출혈"
+  },
+  {
+    "id": "redness_of_eyes",
+    "en": "conjunctival injection",
+    "ko": "결막 충혈"
+  },
+  {
+    "id": "restlessness",
+    "en": "psychomotor agitation",
+    "ko": "정신운동 초조"
+  },
+  {
+    "id": "runny_nose",
+    "en": "rhinorrhea",
+    "ko": "콧물"
+  },
+  {
+    "id": "rusty_sputum",
+    "en": "hemoptysis",
+    "ko": "혈담"
+  },
+  {
+    "id": "scurrying",
+    "en": "fidgetiness",
+    "ko": "안절부절 못함"
+  },
+  {
+    "id": "shivering",
+    "en": "shivering",
+    "ko": "떨림"
+  },
+  {
+    "id": "silver_like_dusting",
+    "en": "silvery scales",
+    "ko": "은백색 인설"
+  },
+  {
+    "id": "sinus_pressure",
+    "en": "sinus congestion",
+    "ko": "부비동 압박감"
+  },
+  {
+    "id": "skin_peeling",
+    "en": "desquamation",
+    "ko": "피부 탈락"
+  },
+  {
+    "id": "skin_rash",
+    "en": "cutaneous eruption",
+    "ko": "피부 발진"
+  },
+  {
+    "id": "slurred_speech",
+    "en": "dysarthria",
+    "ko": "운동성 말장애"
+  },
+  {
+    "id": "small_dents_in_nails",
+    "en": "nail pitting",
+    "ko": "손발톱 함몰"
+  },
+  {
+    "id": "spinning_movements",
+    "en": "vertigo",
+    "ko": "회전성 어지럼증"
+  },
+  {
+    "id": "spotting_urination",
+    "en": "urinary spotting",
+    "ko": "소변 출혈"
+  },
+  {
+    "id": "stiff_neck",
+    "en": "nuchal rigidity",
+    "ko": "경부 강직"
+  },
+  {
+    "id": "stomach_bleeding",
+    "en": "gastrointestinal bleeding",
+    "ko": "위장관 출혈"
+  },
+  {
+    "id": "stomach_pain",
+    "en": "stomach pain",
+    "ko": "위 통증"
+  },
+  {
+    "id": "sunken_eyes",
+    "en": "enophthalmos",
+    "ko": "안구 함몰"
+  },
+  {
+    "id": "sweating",
+    "en": "diaphoresis",
+    "ko": "땀남"
+  },
+  {
+    "id": "swelled_lymph_nodes",
+    "en": "lymphadenopathy",
+    "ko": "림프절 비대"
+  },
+  {
+    "id": "swelling_joints",
+    "en": "joint swelling",
+    "ko": "관절 부종"
+  },
+  {
+    "id": "swelling_of_stomach",
+    "en": "abdominal swelling",
+    "ko": "복부 부종"
+  },
+  {
+    "id": "swollen_blood_vessels",
+    "en": "varicosity",
+    "ko": "정맥 확장"
+  },
+  {
+    "id": "swollen_extremities",
+    "en": "peripheral edema",
+    "ko": "말단 부종"
+  },
+  {
+    "id": "swollen_legs",
+    "en": "lower extremity edema",
+    "ko": "하지 부종"
+  },
+  {
+    "id": "throat_irritation",
+    "en": "pharyngeal irritation",
+    "ko": "인후 자극감"
+  },
+  {
+    "id": "tiredness",
+    "en": "tiredness",
+    "ko": "피곤함"
+  },
+  {
+    "id": "toxic_look_(typhus)",
+    "en": "toxic appearance",
+    "ko": "중독성 외모 양상"
+  },
+  {
+    "id": "ulcers_on_tongue",
+    "en": "oral ulcers",
+    "ko": "구강 궤양"
+  },
+  {
+    "id": "unsteadiness",
+    "en": "gait instability",
+    "ko": "보행 불안정"
+  },
+  {
+    "id": "visual_disturbances",
+    "en": "visual disturbances",
+    "ko": "시야 장애"
+  },
+  {
+    "id": "vomiting",
+    "en": "emesis",
+    "ko": "구토"
+  },
+  {
+    "id": "watering_from_eyes",
+    "en": "epiphora",
+    "ko": "눈물흘림"
+  },
+  {
+    "id": "weakness_in_limbs",
+    "en": "limb weakness",
+    "ko": "사지 허약"
+  },
+  {
+    "id": "weakness_of_one_body_side",
+    "en": "hemiparesis",
+    "ko": "편측 마비"
+  },
+  {
+    "id": "weight_gain",
+    "en": "weight gain",
+    "ko": "체중 증가"
+  },
+  {
+    "id": "weight_loss",
+    "en": "weight loss",
+    "ko": "체중 감소"
+  },
+  {
+    "id": "yellow_crust_ooze",
+    "en": "yellow crusted discharge",
+    "ko": "노란색 딱지성 분비물"
+  },
+  {
+    "id": "yellow_urine",
+    "en": "dark yellow urine",
+    "ko": "짙은 노란색 소변"
+  },
+  {
+    "id": "yellowing_of_eyes",
+    "en": "scleral icterus",
+    "ko": "공막 황달"
+  },
+  {
+    "id": "yellowish_skin",
+    "en": "jaundice",
+    "ko": "황달"
+  }
+]

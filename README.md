@@ -1,3 +1,15 @@
+# 테스트
+
+```sh
+curl -X POST http://localhost:8002/extract         -H "Content-Type: application/json" -d "{\"text\":\"머리가 아파요\"}"
+
+curl -X POST http://localhost:8002/extract/llm     -H "Content-Type: application/json" -d "{\"text\":\"머리가 아파요\"}"
+
+curl -X POST http://localhost:8002/extract/hybrid  -H "Content-Type: application/json" -d "{\"text\":\"머리가 아파요\"}"
+
+```
+
+
 # 실행 방법
 ```sh
 # 1
@@ -10,6 +22,9 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 
 py main.py
+
+
+pip freeze > requirements.txt
 
 # 1-1
 pip freeze > uninstall.txt
