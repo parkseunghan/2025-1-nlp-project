@@ -4,3 +4,9 @@ __pycache__/
 */__pycache__/*
 */venv/*
 */logs/*
+
+# 📄 프론트엔드
+
+web/package-lock.json
+web/node_modules/*
+

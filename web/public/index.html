@@ -44,28 +44,25 @@
       background-color: #005ea2;
     }
 
-    pre {
-      background-color: #ffffff;
-      padding: 1rem;
-      border-radius: 8px;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      border: 1px solid #ddd;
+    .symptom-highlight {
+      background: #f0f8ff;
+      border: 2px solid #0078d4;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .symptom-highlight h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #0078d4;
+    }
+
+    .symptom-highlight ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
       font-size: 1rem;
-    }
-
-    .result-card {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 16px;
-      padding: 2rem;
-      margin-top: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: box-shadow 0.3s;
-    }
-
-    .result-card:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      color: #333;
     }
 
     .risk-low {
@@ -83,7 +80,29 @@
       font-weight: bold;
     }
 
-    .top-rank {
+    .top1-rank {
+      border: 2px solid #0078d4;
+      background: #f4faff;
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0, 120, 212, 0.1);
+    }
+
+    .top1-rank h4 {
+      font-size: 1.2rem;
+      color: #0078d4;
+      margin-bottom: 0.5rem;
+    }
+
+    .top1-rank ul {
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+
+    .rank-grid {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
@@ -91,18 +110,27 @@
     }
 
     .rank-card {
-      flex: 1 1 30%;
-      border: 1px solid #e0e0e0;
+      flex: 1 1 45%;
+      border: 1px solid #ddd;
       border-radius: 12px;
       padding: 1rem;
-      background: #fefefe;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-      text-align: center;
+      background: #fff;
+      text-align: left;
     }
 
-    .rank-card b {
-      font-size: 1.1rem;
+    .rank-card h4 {
+      font-size: 1rem;
       color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      margin-top: 1.5rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #444;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.3rem;
     }
   </style>
 </head>
@@ -114,8 +142,14 @@
   <button id="btn1" onclick="predict('/predict')">예측하기 (LLM+NLP)</button>
   <button id="btn2" onclick="predict('/predict2')">예측하기 (NLP)</button>
 
+  <!-- 초기 안내 메시지로 교체 -->
   <h3>⏳ 추출된 증상</h3>
-  <pre id="symptoms"></pre>
+  <div id="symptoms" class="symptom-highlight">
+    <ul>
+      <li>ℹ️ 증상을 입력한 후 예측하기 버튼을 눌러주세요</li>
+    </ul>
+  </div>
+
 
   <h3>🧪 예측 결과</h3>
   <div id="result"></div>
@@ -128,7 +162,11 @@
       const btn1 = document.getElementById("btn1");
       const btn2 = document.getElementById("btn2");
 
-      symptomsEl.textContent = "⏳ 증상 추출 중...";
+      // 상태 초기화
+      // 버튼 클릭 시 초기화할 때만 분석 중 메시지 표시
+      symptomsEl.innerHTML = `
+        <ul><li>⏳ 증상 분석 중...</li></ul>`;
+
       resultEl.innerHTML = "";
       btn1.disabled = true;
       btn2.disabled = true;
@@ -143,38 +181,39 @@
         const data = await res.json();
 
         if (!res.ok || !data.symptoms || !Array.isArray(data.symptoms)) {
-          symptomsEl.textContent = `❌ 오류: ${data.message || data.error || "서버 오류 발생"}`;
+          symptomsEl.innerHTML = `<h4>❌ 오류</h4><ul><li>${data.message || data.error || "서버 오류 발생"}</li></ul>`;
           resultEl.innerHTML = "";
         } else {
-          // ✅ time 병합: usedSymptoms + symptoms
+          // time 병합: usedSymptoms + symptoms
           if (data.result?.usedSymptoms && Array.isArray(data.result.usedSymptoms)) {
             const extracted = data.symptoms;
-
-            // time 정보를 병합
             data.result.usedSymptoms.forEach(u => {
               const match = extracted.find(e => typeof e === 'object' && e.symptom === u.symptom);
-              if (match && match.time) {
-                u.time = match.time;
-              }
+              if (match && match.time) u.time = match.time;
             });
 
-            symptomsEl.textContent = data.result.usedSymptoms.map(s => {
+            const symptomListHtml = data.result.usedSymptoms.map(s => {
               const time = s.time ? ` (${s.time})` : "";
-              return `- ${s.korean} (${s.symptom})${time}`;
-            }).join("\n");
+              return `<li>${s.korean} <small style="color:#888;">(${s.symptom})${time}</small></li>`;
+            }).join("");
+
+            symptomsEl.innerHTML = `
+              <ul>${symptomListHtml}</ul>`;
           } else {
-            // fallback
-            symptomsEl.textContent = data.symptoms.map(s => {
+            const symptomListHtml = data.symptoms.map(s => {
               const symptom = typeof s === "string" ? s : s?.symptom || "알 수 없음";
               const time = typeof s === "object" && s?.time ? ` (${s.time})` : "";
-              return `- ${symptom}${time}`;
-            }).join("\n");
+              return `<li>${symptom}${time}</li>`;
+            }).join("");
+
+            symptomsEl.innerHTML = `
+              <ul>${symptomListHtml}</ul>`;
           }
 
           resultEl.innerHTML = renderResult(data);
         }
       } catch (err) {
-        symptomsEl.textContent = `❌ 네트워크 오류: ${err.message}`;
+        symptomsEl.innerHTML = `<h4>❌ 네트워크 오류</h4><ul><li>${err.message}</li></ul>`;
         resultEl.innerHTML = "";
       } finally {
         btn1.disabled = false;
@@ -183,34 +222,50 @@
     }
 
     function renderResult(data) {
-      const { koreanLabel, riskLevel, riskScore, guideline, ranks } = data.result;
+      const { riskLevel, guideline, ranks } = data.result;
+
       const riskClass = {
         high: "risk-high",
         medium: "risk-medium",
         low: "risk-low"
       }[riskLevel] || "";
 
+      const top1 = ranks[0];
+      const others = ranks.slice(1);
+
+      const top1SymptomList = (top1.usedSymptoms || [])
+        .map(s => `<li>${s.korean || s.symptom}</li>`)
+        .join("");
+
       return `
-        <div class="result-card">
-          <h3>🩺 예측된 질병: <b>${koreanLabel}</b></h3>
-          <p>🧪 <b>위험도:</b> <span class="${riskClass}">${riskLevel.toUpperCase()} (${riskScore})</span></p>
-          <p>📌 <b>가이드라인:</b> ${guideline}</p>
-          <h4>📊 Top 3 예측 질병</h4>
-          <div class="top-rank">
-            ${ranks.map(r => `
+        <div class="top1-rank">
+          <h4>#${top1.rank}. ${top1.koreanLabel ?? top1.fineLabel}</h4>
+          <p><strong>예측 확률:</strong> ${top1.riskScore}</p>
+          <p><strong>위험도:</strong> <span class="${riskClass}">${riskLevel.toUpperCase()}</span></p>
+          <p class="section-title">관리 가이드라인</p>
+          <p>${guideline}</p>
+          <p class="section-title">기여한 증상</p>
+          <ul>${top1SymptomList || "<li>정보 없음</li>"}</ul>
+        </div>
+
+        <div class="section-title">Top 2~3 예측 질병</div>
+        <div class="rank-grid">
+          ${others.map(r => {
+        const symList = (r.usedSymptoms || [])
+          .map(s => `<li>${s.korean || s.symptom}</li>`)
+          .join("");
+        return `
               <div class="rank-card">
-                <b>#${r.rank}</b><br/>
-                🧾 ${r.koreanLabel ?? r.fineLabel}<br/>
-                🔢 확률: ${r.riskScore}
-              </div>
-            `).join('')}
-          </div>
+                <h4>#${r.rank}. ${r.koreanLabel ?? r.fineLabel}</h4>
+                <p><strong>예측 확률:</strong> ${r.riskScore}</p>
+                <p class="section-title">기여한 증상</p>
+                <ul>${symList || "<li>정보 없음</li>"}</ul>
+              </div>`;
+      }).join("")}
         </div>
       `;
     }
   </script>
-
-
 </body>
 
 </html>
