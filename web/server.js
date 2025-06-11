@@ -16,16 +16,20 @@ async function extractAndPredict(endpoint, text, res) {
         });
 
         const data = await extractRes.json();
-        const extracted = data.hybrid_results || data.results || data.llm_results;
+        const extracted =
+            data.hybrid_results ||
+            data.results ||
+            data.llm_results ||
+            data.symptoms; // ✅ FastAPI에서 반환하는 표준 키
 
         if (!Array.isArray(extracted)) {
             throw new Error("❌ 추출 결과가 배열 형식이 아닙니다.");
         }
+        
+        console.log("✅ 추출된 증상:", extracted);
 
-
-        const symptoms = extracted
-            .map((item) => item.symptom)
-            .filter(Boolean); // null/undefined 제거
+        // ✅ 증상이 객체 배열이면 그대로 사용
+        const symptoms = extracted.filter(item => typeof item === "object" && item.symptom);
 
         if (symptoms.length === 0) {
             return res.status(400).json({ error: "❌ 추출된 증상이 없습니다." });
@@ -35,14 +39,14 @@ async function extractAndPredict(endpoint, text, res) {
         const predictRes = await fetch("http://localhost:8002/predict", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ symptoms }),
+            body: JSON.stringify({ symptoms }), // ✅ 객체 배열 전달
         });
 
         const prediction = await predictRes.json();
 
         res.json({
-            symptoms,
-            result: prediction.result || prediction, // fallback 처리
+            symptoms, // ✅ 프론트로도 객체 배열 그대로 전달
+            result: prediction.result || prediction,
         });
     } catch (err) {
         console.error("❌ 서버 오류:", err.message);

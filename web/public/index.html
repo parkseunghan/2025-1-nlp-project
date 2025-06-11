@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <title>🩺 질병 예측기</title>
+  <style>
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
+      padding: 2rem;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+    }
+
+    h2,
+    h3,
+    h4 {
+      color: #2a2f45;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 1rem;
+      margin-right: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      border: none;
+      background-color: #0078d4;
+      color: white;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #005ea2;
+    }
+
+    pre {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    .result-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s;
+    }
+
+    .result-card:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .risk-low {
+      color: #2e8b57;
+      font-weight: bold;
+    }
+
+    .risk-medium {
+      color: #ffa500;
+      font-weight: bold;
+    }
+
+    .risk-high {
+      color: #dc143c;
+      font-weight: bold;
+    }
+
+    .top-rank {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .rank-card {
+      flex: 1 1 30%;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 1rem;
+      background: #fefefe;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      text-align: center;
+    }
+
+    .rank-card b {
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
 </head>
+
 <body>
-  <h2>증상 입력</h2>
-  <textarea id="input" rows="4" cols="50">머리가 아프고 토할 것 같아요</textarea>
+  <h2>📝 증상 입력</h2>
+  <textarea id="input" rows="4">어젯밤부터 배가 심하게 아프고 설사를 반복하고 있어요. 속도 메스껍고 열도 약간 있어요</textarea>
   <br />
   <button id="btn1" onclick="predict('/predict')">예측하기 (LLM+NLP)</button>
   <button id="btn2" onclick="predict('/predict2')">예측하기 (NLP)</button>
@@ -15,7 +118,7 @@
   <pre id="symptoms"></pre>
 
   <h3>🧪 예측 결과</h3>
-  <pre id="result"></pre>
+  <div id="result"></div>
 
   <script>
     async function predict(endpoint) {
@@ -26,7 +129,7 @@
       const btn2 = document.getElementById("btn2");
 
       symptomsEl.textContent = "⏳ 증상 추출 중...";
-      resultEl.textContent = "";
+      resultEl.innerHTML = "";
       btn1.disabled = true;
       btn2.disabled = true;
 
@@ -39,21 +142,75 @@
 
         const data = await res.json();
 
-        if (!res.ok || !data.symptoms) {
+        if (!res.ok || !data.symptoms || !Array.isArray(data.symptoms)) {
           symptomsEl.textContent = `❌ 오류: ${data.message || data.error || "서버 오류 발생"}`;
-          resultEl.textContent = "";
+          resultEl.innerHTML = "";
         } else {
-          symptomsEl.textContent = JSON.stringify(data.symptoms, null, 2);
-          resultEl.textContent = JSON.stringify(data.result, null, 2);
+          // ✅ time 병합: usedSymptoms + symptoms
+          if (data.result?.usedSymptoms && Array.isArray(data.result.usedSymptoms)) {
+            const extracted = data.symptoms;
+
+            // time 정보를 병합
+            data.result.usedSymptoms.forEach(u => {
+              const match = extracted.find(e => typeof e === 'object' && e.symptom === u.symptom);
+              if (match && match.time) {
+                u.time = match.time;
+              }
+            });
+
+            symptomsEl.textContent = data.result.usedSymptoms.map(s => {
+              const time = s.time ? ` (${s.time})` : "";
+              return `- ${s.korean} (${s.symptom})${time}`;
+            }).join("\n");
+          } else {
+            // fallback
+            symptomsEl.textContent = data.symptoms.map(s => {
+              const symptom = typeof s === "string" ? s : s?.symptom || "알 수 없음";
+              const time = typeof s === "object" && s?.time ? ` (${s.time})` : "";
+              return `- ${symptom}${time}`;
+            }).join("\n");
+          }
+
+          resultEl.innerHTML = renderResult(data);
         }
       } catch (err) {
         symptomsEl.textContent = `❌ 네트워크 오류: ${err.message}`;
-        resultEl.textContent = "";
+        resultEl.innerHTML = "";
       } finally {
         btn1.disabled = false;
         btn2.disabled = false;
       }
     }
+
+    function renderResult(data) {
+      const { koreanLabel, riskLevel, riskScore, guideline, ranks } = data.result;
+      const riskClass = {
+        high: "risk-high",
+        medium: "risk-medium",
+        low: "risk-low"
+      }[riskLevel] || "";
+
+      return `
+        <div class="result-card">
+          <h3>🩺 예측된 질병: <b>${koreanLabel}</b></h3>
+          <p>🧪 <b>위험도:</b> <span class="${riskClass}">${riskLevel.toUpperCase()} (${riskScore})</span></p>
+          <p>📌 <b>가이드라인:</b> ${guideline}</p>
+          <h4>📊 Top 3 예측 질병</h4>
+          <div class="top-rank">
+            ${ranks.map(r => `
+              <div class="rank-card">
+                <b>#${r.rank}</b><br/>
+                🧾 ${r.koreanLabel ?? r.fineLabel}<br/>
+                🔢 확률: ${r.riskScore}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
   </script>
+
+
 </body>
+
 </html>

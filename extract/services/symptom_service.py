@@ -51,6 +51,8 @@ def extract_combined_symptoms(text_ko: str, text_en: str, verbose: bool = False)
                     print(f"✅ [TokenSet match] '{symptom}' matched by part1: {part1_match}, part2: {part2_match}")
                 results.append({"symptom": symptom, "time": detect_time(text_ko, "ko")})
                 break
+    print("✅ 최종 반환 형식:", results)
+    print("✅ 타입 확인:", type(results), "→ 내부 항목 타입:", type(results[0]) if results else "빈 리스트")
 
     composite = handle_composite_symptoms(text_ko, results)
     if composite:
@@ -61,6 +63,7 @@ def extract_combined_symptoms(text_ko: str, text_en: str, verbose: bool = False)
     final = deduplicate_results(results)
     if verbose:
         print(f"\n🟢 [Step 5] 최종 추출 결과: {final}")
+    
     return final
 
 

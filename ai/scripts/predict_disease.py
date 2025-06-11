@@ -5,6 +5,20 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
+
+# ✅ 경로
+SYMPTOM_LABEL_MAP_PATH = "data/symptom_label_map.json"
+with open(SYMPTOM_LABEL_MAP_PATH, encoding="utf-8") as f:
+    symptom_label_map = {item["id"]: item["ko"] for item in json.load(f)}
+
+DISEASE_LABEL_MAP_PATH = "data/disease_label_map.json"
+with open(DISEASE_LABEL_MAP_PATH, encoding="utf-8") as f:
+    label_map = {item["id"]: item["ko"] for item in json.load(f)}
+
+GUIDELINE_PATH = "data/guideline.json"
+with open(GUIDELINE_PATH, encoding="utf-8") as f:
+    guideline_map = json.load(f)
+
 # ✅ 경로
 SYMPTOM_LIST_PATH = "data/symptoms.json"
 SEVERITY_PATH = "processed/merged_symptom_severity.csv"
@@ -45,7 +59,7 @@ def symptoms_to_vector(symptoms: list[str]) -> np.ndarray:
 # ✅ 위험도 계산
 def calculate_risk_level(symptoms: list[str]) -> tuple[float, str]:
     weighted_severities = []
-    for s in symptoms:
+    for s in set(symptoms):
         base = severity_dict.get(s, 0)
         multiplier = {
             1: 1.0,
@@ -76,11 +90,10 @@ def calculate_risk_level(symptoms: list[str]) -> tuple[float, str]:
 # ✅ 모델 학습
 model = RandomForestClassifier(random_state=42)
 model.fit(X, y)
-print(f"\n✅ 모델 학습 완료: 총 학습 샘플 {len(X)}개, 클래스 수: {len(model.classes_)}")
-
 
 # ✅ 예측 함수
 def predict_disease(symptoms: list[str], top_n: int = 3) -> dict:
+    
     print("\n🧪 예측 시작")
     start = time.time()
     vec = symptoms_to_vector(symptoms).reshape(1, -1)
@@ -93,13 +106,21 @@ def predict_disease(symptoms: list[str], top_n: int = 3) -> dict:
     debug("Top-N 예측 결과", ranked)
 
     fine_label = ranked[0][0]
+    korean_name = label_map.get(fine_label, fine_label)
     coarse_label = fine_label.split("_")[0]
-    risk_score = round(ranked[0][1], 4)
+    risk_score, risk_level = calculate_risk_level(symptoms)
     elapsed = round(time.time() - start, 3)
-    risk_val, risk_level = calculate_risk_level(symptoms)
-    guideline = f"{fine_label}이 의심됩니다. 수분 섭취, 휴식, 병원 방문 권장."
+    guideline = guideline_map.get(fine_label, f"{fine_label}에 대한 가이드라인이 없습니다.")
 
     return {
+        "usedSymptoms": [
+            {
+                "symptom": s,
+                "korean": symptom_label_map.get(s, s)
+            }
+            for s in symptoms
+        ],
+        "koreanLabel": korean_name,
         "coarseLabel": coarse_label,
         "fineLabel": fine_label,
         "riskScore": risk_score,
@@ -111,6 +132,7 @@ def predict_disease(symptoms: list[str], top_n: int = 3) -> dict:
                 "rank": i + 1,
                 "coarseLabel": d.split("_")[0],
                 "fineLabel": d,
+                "koreanLabel": label_map.get(d, d),
                 "riskScore": round(p, 4),
             }
             for i, (d, p) in enumerate(ranked)

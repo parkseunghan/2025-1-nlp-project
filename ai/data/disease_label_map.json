@@ -1,0 +1,672 @@
+[
+  {
+    "id": "acne",
+    "en": "acne vulgaris",
+    "ko": "여드름"
+  },
+  {
+    "id": "aids",
+    "en": "acquired immunodeficiency syndrome",
+    "ko": "후천성면역결핍증"
+  },
+  {
+    "id": "alcoholic_hepatitis",
+    "en": "alcoholic hepatitis",
+    "ko": "알코올성 간염"
+  },
+  {
+    "id": "allergic_rhinitis",
+    "en": "allergic rhinitis",
+    "ko": "알레르기 비염"
+  },
+  {
+    "id": "allergy",
+    "en": "hypersensitivity reaction",
+    "ko": "알레르기"
+  },
+  {
+    "id": "alzheimers_disease",
+    "en": "Alzheimer's disease",
+    "ko": "알츠하이머병"
+  },
+  {
+    "id": "anemia",
+    "en": "anemia",
+    "ko": "빈혈"
+  },
+  {
+    "id": "anxiety_disorders",
+    "en": "anxiety disorders",
+    "ko": "불안 장애"
+  },
+  {
+    "id": "appendicitis",
+    "en": "appendicitis",
+    "ko": "충수염"
+  },
+  {
+    "id": "arthritis",
+    "en": "arthritis",
+    "ko": "관절염"
+  },
+  {
+    "id": "asthma",
+    "en": "asthma",
+    "ko": "천식"
+  },
+  {
+    "id": "atherosclerosis",
+    "en": "atherosclerosis",
+    "ko": "죽상경화증"
+  },
+  {
+    "id": "autism_spectrum_disorder",
+    "en": "autism spectrum disorder",
+    "ko": "자폐 스펙트럼 장애"
+  },
+  {
+    "id": "bipolar_disorder",
+    "en": "bipolar disorder",
+    "ko": "조울증"
+  },
+  {
+    "id": "bladder_cancer",
+    "en": "bladder cancer",
+    "ko": "방광암"
+  },
+  {
+    "id": "brain_tumor",
+    "en": "brain tumor",
+    "ko": "뇌종양"
+  },
+  {
+    "id": "breast_cancer",
+    "en": "breast cancer",
+    "ko": "유방암"
+  },
+  {
+    "id": "bronchial_asthma",
+    "en": "bronchial asthma",
+    "ko": "기관지 천식"
+  },
+  {
+    "id": "bronchitis",
+    "en": "bronchitis",
+    "ko": "기관지염"
+  },
+  {
+    "id": "cataracts",
+    "en": "cataracts",
+    "ko": "백내장"
+  },
+  {
+    "id": "cerebral_palsy",
+    "en": "cerebral palsy",
+    "ko": "뇌성마비"
+  },
+  {
+    "id": "cervical_spondylosis",
+    "en": "cervical spondylosis",
+    "ko": "경추 척추증"
+  },
+  {
+    "id": "chicken_pox",
+    "en": "chicken pox",
+    "ko": "수두"
+  },
+  {
+    "id": "cholecystitis",
+    "en": "cholecystitis",
+    "ko": "담낭염"
+  },
+  {
+    "id": "cholera",
+    "en": "cholera",
+    "ko": "콜레라"
+  },
+  {
+    "id": "chronic_cholestasis",
+    "en": "chronic cholestasis",
+    "ko": "만성 담즙정체"
+  },
+  {
+    "id": "chronic_kidney_disease",
+    "en": "chronic kidney disease",
+    "ko": "만성 신장질환"
+  },
+  {
+    "id": "cirrhosis",
+    "en": "cirrhosis",
+    "ko": "간경변증"
+  },
+  {
+    "id": "colorectal_cancer",
+    "en": "colorectal cancer",
+    "ko": "대장암"
+  },
+  {
+    "id": "common_cold",
+    "en": "common cold",
+    "ko": "감기"
+  },
+  {
+    "id": "conjunctivitis",
+    "en": "conjunctivitis",
+    "ko": "결막염"
+  },
+  {
+    "id": "copd",
+    "en": "chronic obstructive pulmonary disease",
+    "ko": "만성 폐쇄성 폐질환"
+  },
+  {
+    "id": "coronary_artery_disease",
+    "en": "coronary artery disease",
+    "ko": "관상동맥질환"
+  },
+  {
+    "id": "covid",
+    "en": "COVID-19",
+    "ko": "코로나19"
+  },
+  {
+    "id": "crohns_disease",
+    "en": "Crohn's disease",
+    "ko": "크론병"
+  },
+  {
+    "id": "cystic_fibrosis",
+    "en": "cystic fibrosis",
+    "ko": "낭포성 섬유증"
+  },
+  {
+    "id": "dementia",
+    "en": "dementia",
+    "ko": "치매"
+  },
+  {
+    "id": "dengue",
+    "en": "dengue fever",
+    "ko": "뎅기열"
+  },
+  {
+    "id": "depression",
+    "en": "major depressive disorder",
+    "ko": "우울증"
+  },
+  {
+    "id": "diabetes",
+    "en": "diabetes mellitus",
+    "ko": "당뇨병"
+  },
+  {
+    "id": "dimorphic_hemorrhoids",
+    "en": "mixed hemorrhoids",
+    "ko": "혼합 치질"
+  },
+  {
+    "id": "diverticulitis",
+    "en": "diverticulitis",
+    "ko": "게실염"
+  },
+  {
+    "id": "down_syndrome",
+    "en": "Down syndrome",
+    "ko": "다운증후군"
+  },
+  {
+    "id": "drug_reaction",
+    "en": "adverse drug reaction",
+    "ko": "약물 부작용"
+  },
+  {
+    "id": "eating_disorders",
+    "en": "eating disorders",
+    "ko": "섭식장애"
+  },
+  {
+    "id": "ebola_virus",
+    "en": "Ebola virus infection",
+    "ko": "에볼라 바이러스 감염"
+  },
+  {
+    "id": "eczema",
+    "en": "atopic dermatitis",
+    "ko": "아토피 피부염"
+  },
+  {
+    "id": "endometriosis",
+    "en": "endometriosis",
+    "ko": "자궁내막증"
+  },
+  {
+    "id": "epilepsy",
+    "en": "epilepsy",
+    "ko": "간질"
+  },
+  {
+    "id": "esophageal_cancer",
+    "en": "esophageal cancer",
+    "ko": "식도암"
+  },
+  {
+    "id": "fibromyalgia",
+    "en": "fibromyalgia",
+    "ko": "섬유근육통"
+  },
+  {
+    "id": "fungal_infection",
+    "en": "fungal infection",
+    "ko": "진균 감염증"
+  },
+  {
+    "id": "gastroenteritis",
+    "en": "gastroenteritis",
+    "ko": "위장염"
+  },
+  {
+    "id": "gerd",
+    "en": "gastroesophageal reflux disease (GERD)",
+    "ko": "위식도 역류 질환"
+  },
+  {
+    "id": "glaucoma",
+    "en": "glaucoma",
+    "ko": "녹내장"
+  },
+  {
+    "id": "gout",
+    "en": "gout",
+    "ko": "통풍"
+  },
+  {
+    "id": "heart_attack",
+    "en": "acute myocardial infarction",
+    "ko": "급성 심근경색"
+  },
+  {
+    "id": "hemophilia",
+    "en": "hemophilia",
+    "ko": "혈우병"
+  },
+  {
+    "id": "hemorrhoids",
+    "en": "hemorrhoids",
+    "ko": "치질"
+  },
+  {
+    "id": "hepatitis",
+    "en": "viral hepatitis",
+    "ko": "바이러스성 간염"
+  },
+  {
+    "id": "hepatitis_a",
+    "en": "hepatitis A",
+    "ko": "A형 간염"
+  },
+  {
+    "id": "hepatitis_b",
+    "en": "hepatitis B",
+    "ko": "B형 간염"
+  },
+  {
+    "id": "hepatitis_c",
+    "en": "hepatitis C",
+    "ko": "C형 간염"
+  },
+  {
+    "id": "hepatitis_d",
+    "en": "hepatitis D",
+    "ko": "D형 간염"
+  },
+  {
+    "id": "hepatitis_e",
+    "en": "hepatitis E",
+    "ko": "E형 간염"
+  },
+  {
+    "id": "hyperglycemia",
+    "en": "hyperglycemia",
+    "ko": "고혈당증"
+  },
+  {
+    "id": "hypertension",
+    "en": "hypertension",
+    "ko": "고혈압"
+  },
+  {
+    "id": "hypertensive_heart_disease",
+    "en": "hypertensive heart disease",
+    "ko": "고혈압성 심장질환"
+  },
+  {
+    "id": "hyperthyroidism",
+    "en": "hyperthyroidism",
+    "ko": "갑상선기능항진증"
+  },
+  {
+    "id": "hypoglycemia",
+    "en": "hypoglycemia",
+    "ko": "저혈당증"
+  },
+  {
+    "id": "hypothyroidism",
+    "en": "hypothyroidism",
+    "ko": "갑상선기능저하증"
+  },
+  {
+    "id": "impetigo",
+    "en": "impetigo",
+    "ko": "농가진"
+  },
+  {
+    "id": "influenza",
+    "en": "seasonal influenza",
+    "ko": "계절성 독감"
+  },
+  {
+    "id": "jaundice",
+    "en": "jaundice",
+    "ko": "황달"
+  },
+  {
+    "id": "kidney_cancer",
+    "en": "renal cell carcinoma",
+    "ko": "신장암"
+  },
+  {
+    "id": "kidney_disease",
+    "en": "chronic kidney disease",
+    "ko": "만성 신장질환"
+  },
+  {
+    "id": "klinefelter_syndrome",
+    "en": "klinefelter syndrome",
+    "ko": "클라인펠터 증후군"
+  },
+  {
+    "id": "liver_cancer",
+    "en": "hepatocellular carcinoma",
+    "ko": "간세포암"
+  },
+  {
+    "id": "liver_disease",
+    "en": "chronic liver disease",
+    "ko": "만성 간질환"
+  },
+  {
+    "id": "lung_cancer",
+    "en": "non-small cell lung cancer",
+    "ko": "비소세포 폐암"
+  },
+  {
+    "id": "lyme_disease",
+    "en": "lyme borreliosis",
+    "ko": "라임병"
+  },
+  {
+    "id": "lymphoma",
+    "en": "malignant lymphoma",
+    "ko": "악성 림프종"
+  },
+  {
+    "id": "malaria",
+    "en": "malaria",
+    "ko": "말라리아"
+  },
+  {
+    "id": "marfan_syndrome",
+    "en": "marfan syndrome",
+    "ko": "마르팡 증후군"
+  },
+  {
+    "id": "measles",
+    "en": "measles",
+    "ko": "홍역"
+  },
+  {
+    "id": "melanoma",
+    "en": "malignant melanoma",
+    "ko": "악성 흑색종"
+  },
+  {
+    "id": "migraine",
+    "en": "migraine",
+    "ko": "편두통"
+  },
+  {
+    "id": "multiple_sclerosis",
+    "en": "multiple sclerosis",
+    "ko": "다발성 경화증"
+  },
+  {
+    "id": "mumps",
+    "en": "mumps",
+    "ko": "유행성이하선염"
+  },
+  {
+    "id": "muscular_dystrophy",
+    "en": "muscular dystrophy",
+    "ko": "근이영양증"
+  },
+  {
+    "id": "obsessive_compulsive_disorder_(ocd)",
+    "en": "obsessive-compulsive disorder",
+    "ko": "강박 장애"
+  },
+  {
+    "id": "osteoarthritis",
+    "en": "osteoarthritis",
+    "ko": "골관절염"
+  },
+  {
+    "id": "osteomyelitis",
+    "en": "osteomyelitis",
+    "ko": "골수염"
+  },
+  {
+    "id": "osteoporosis",
+    "en": "osteoporosis",
+    "ko": "골다공증"
+  },
+  {
+    "id": "otitis_media",
+    "en": "acute otitis media",
+    "ko": "급성 중이염"
+  },
+  {
+    "id": "ovarian_cancer",
+    "en": "epithelial ovarian cancer",
+    "ko": "상피성 난소암"
+  },
+  {
+    "id": "pancreatic_cancer",
+    "en": "pancreatic adenocarcinoma",
+    "ko": "췌장암"
+  },
+  {
+    "id": "pancreatitis",
+    "en": "acute pancreatitis",
+    "ko": "급성 췌장염"
+  },
+  {
+    "id": "paralysis_brain_hemorrhage",
+    "en": "hemiplegia due to cerebral hemorrhage",
+    "ko": "뇌출혈로 인한 편마비"
+  },
+  {
+    "id": "parkinson's_disease",
+    "en": "Parkinson's disease",
+    "ko": "파킨슨병"
+  },
+  {
+    "id": "paroxysmal_positional_vertigo",
+    "en": "Benign paroxysmal positional vertigo",
+    "ko": "양성 돌발성 자세현훈"
+  },
+  {
+    "id": "peptic_ulcer_disease",
+    "en": "Peptic ulcer disease",
+    "ko": "소화성 궤양 질환"
+  },
+  {
+    "id": "pneumonia",
+    "en": "Pneumonia",
+    "ko": "폐렴"
+  },
+  {
+    "id": "pneumothorax",
+    "en": "Pneumothorax",
+    "ko": "기흉"
+  },
+  {
+    "id": "polio",
+    "en": "Poliomyelitis",
+    "ko": "소아마비"
+  },
+  {
+    "id": "polycystic_ovary_syndrome",
+    "en": "Polycystic ovary syndrome (PCOS)",
+    "ko": "다낭성 난소 증후군"
+  },
+  {
+    "id": "prader_willi_syndrome",
+    "en": "Prader-Willi syndrome",
+    "ko": "프라더-윌리 증후군"
+  },
+  {
+    "id": "prostate_cancer",
+    "en": "Prostate cancer",
+    "ko": "전립선암"
+  },
+  {
+    "id": "psoriasis",
+    "en": "Psoriasis",
+    "ko": "건선"
+  },
+  {
+    "id": "rabies",
+    "en": "Rabies",
+    "ko": "광견병"
+  },
+  {
+    "id": "rheumatoid_arthritis",
+    "en": "Rheumatoid arthritis",
+    "ko": "류마티스 관절염"
+  },
+  {
+    "id": "rubella",
+    "en": "Rubella",
+    "ko": "풍진"
+  },
+  {
+    "id": "schizophrenia",
+    "en": "Schizophrenia",
+    "ko": "조현병"
+  },
+  {
+    "id": "scoliosis",
+    "en": "Scoliosis",
+    "ko": "척추측만증"
+  },
+  {
+    "id": "sepsis",
+    "en": "Sepsis",
+    "ko": "패혈증"
+  },
+  {
+    "id": "sickle_cell_anemia",
+    "en": "Sickle cell anemia",
+    "ko": "겸상 적혈구 빈혈"
+  },
+  {
+    "id": "sinusitis",
+    "en": "Sinusitis",
+    "ko": "부비동염"
+  },
+  {
+    "id": "sleep_apnea",
+    "en": "Sleep apnea",
+    "ko": "수면 무호흡증"
+  },
+  {
+    "id": "spina_bifida",
+    "en": "Spina bifida",
+    "ko": "척추 이분증"
+  },
+  {
+    "id": "stroke",
+    "en": "Stroke",
+    "ko": "뇌졸중"
+  },
+  {
+    "id": "systemic_lupus_erythematosus_(sle)",
+    "en": "Systemic lupus erythematosus (SLE)",
+    "ko": "전신 홍반성 루푸스"
+  },
+  {
+    "id": "testicular_cancer",
+    "en": "Testicular cancer",
+    "ko": "고환암"
+  },
+  {
+    "id": "tetanus",
+    "en": "Tetanus",
+    "ko": "파상풍"
+  },
+  {
+    "id": "thyroid_cancer",
+    "en": "Thyroid cancer",
+    "ko": "갑상선암"
+  },
+  {
+    "id": "tonsillitis",
+    "en": "Tonsillitis",
+    "ko": "편도염"
+  },
+  {
+    "id": "tourette_syndrome",
+    "en": "Tourette syndrome",
+    "ko": "뚜렛 증후군"
+  },
+  {
+    "id": "tuberculosis",
+    "en": "Tuberculosis",
+    "ko": "결핵"
+  },
+  {
+    "id": "turner_syndrome",
+    "en": "Turner syndrome",
+    "ko": "터너 증후군"
+  },
+  {
+    "id": "typhoid",
+    "en": "Typhoid fever",
+    "ko": "장티푸스"
+  },
+  {
+    "id": "ulcerative_colitis",
+    "en": "Ulcerative colitis",
+    "ko": "궤양성 대장염"
+  },
+  {
+    "id": "urinary_tract_infection",
+    "en": "Urinary tract infection (UTI)",
+    "ko": "요로감염"
+  },
+  {
+    "id": "varicose_veins",
+    "en": "Varicose veins",
+    "ko": "정맥류"
+  },
+  {
+    "id": "williams_syndrome",
+    "en": "Williams syndrome",
+    "ko": "윌리엄스 증후군"
+  },
+  {
+    "id": "zika_virus",
+    "en": "Zika virus infection",
+    "ko": "지카바이러스 감염증"
+  }
+]
