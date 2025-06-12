@@ -25,7 +25,7 @@ async function extractAndPredict(endpoint, text, res) {
         if (!Array.isArray(extracted)) {
             throw new Error("❌ 추출 결과가 배열 형식이 아닙니다.");
         }
-        
+
         console.log("✅ 추출된 증상:", extracted);
 
         // ✅ 증상이 객체 배열이면 그대로 사용
@@ -53,16 +53,33 @@ async function extractAndPredict(endpoint, text, res) {
         res.status(500).json({ error: "예측 실패", message: err.message });
     }
 }
+app.post("/predict/nlp", async (req, res) => {
+    const { text } = req.body;
+    await extractAndPredict("http://localhost:8001/extract/nlp", text, res);
+});
 
-app.post("/predict", async (req, res) => {
+app.post("/predict/hybrid", async (req, res) => {
     const { text } = req.body;
     await extractAndPredict("http://localhost:8001/extract/hybrid", text, res);
 });
 
-app.post("/predict2", async (req, res) => {
+
+app.post("/predict/llm", async (req, res) => {
     const { text } = req.body;
-    await extractAndPredict("http://localhost:8001/extract", text, res);
+    await extractAndPredict("http://localhost:8001/extract/llm", text, res);
 });
+
+app.get("/logs/unknown-symptoms", async (req, res) => {
+    try {
+        const response = await fetch("http://localhost:8001/logs/unknown-symptoms");
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.error("❌ 로그 조회 실패:", err.message);
+        res.status(500).json({ error: "로그 조회 실패", message: err.message });
+    }
+});
+
 
 const PORT = 3000;
 app.listen(PORT, () => {

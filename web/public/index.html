@@ -136,11 +136,18 @@
 </head>
 
 <body>
+
+  <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+    <button onclick="window.location.href='/logs.html'" style="background-color: #6c757d;">
+      🧾 정의되지 않은 증상 로그 보기
+    </button>
+  </div>
   <h2>📝 증상 입력</h2>
   <textarea id="input" rows="4">어젯밤부터 배가 심하게 아프고 설사를 반복하고 있어요. 속도 메스껍고 열도 약간 있어요</textarea>
   <br />
-  <button id="btn1" onclick="predict('/predict')">예측하기 (LLM+NLP)</button>
-  <button id="btn2" onclick="predict('/predict2')">예측하기 (NLP)</button>
+  <button id="btn1" onclick="predict('/predict/nlp')">예측하기 (NLP)</button>
+  <button id="btn2" onclick="predict('/predict/hybrid')">예측하기 (LLM+NLP)</button>
+  <button id="btn3" onclick="predict('/predict/llm')">예측하기 (LLM)</button>
 
   <!-- 초기 안내 메시지로 교체 -->
   <h3>⏳ 추출된 증상</h3>
@@ -161,15 +168,14 @@
       const resultEl = document.getElementById("result");
       const btn1 = document.getElementById("btn1");
       const btn2 = document.getElementById("btn2");
+      const btn3 = document.getElementById("btn3");
 
-      // 상태 초기화
-      // 버튼 클릭 시 초기화할 때만 분석 중 메시지 표시
       symptomsEl.innerHTML = `
         <ul><li>⏳ 증상 분석 중...</li></ul>`;
-
       resultEl.innerHTML = "";
       btn1.disabled = true;
       btn2.disabled = true;
+      btn3.disabled = true;
 
       try {
         const res = await fetch(endpoint, {
@@ -184,21 +190,23 @@
           symptomsEl.innerHTML = `<h4>❌ 오류</h4><ul><li>${data.message || data.error || "서버 오류 발생"}</li></ul>`;
           resultEl.innerHTML = "";
         } else {
-          // time 병합: usedSymptoms + symptoms
           if (data.result?.usedSymptoms && Array.isArray(data.result.usedSymptoms)) {
             const extracted = data.symptoms;
-            data.result.usedSymptoms.forEach(u => {
-              const match = extracted.find(e => typeof e === 'object' && e.symptom === u.symptom);
-              if (match && match.time) u.time = match.time;
-            });
 
-            const symptomListHtml = data.result.usedSymptoms.map(s => {
-              const time = s.time ? ` (${s.time})` : "";
-              return `<li>${s.korean} <small style="color:#888;">(${s.symptom})${time}</small></li>`;
-            }).join("");
+            const symptomListHtml = Array.from(
+              new Map(
+                data.result.usedSymptoms.map(s => {
+                  const matches = extracted.filter(e => typeof e === 'object' && e.symptom === s.symptom);
+                  const times = [...new Set(matches.map(m => m.time ?? "None"))];
+                  const timeText = times.length ? ` (${times.join(", ")})` : "";
+                  return [s.symptom, `<li>${s.korean} <small style="color:#888;">(${s.symptom})${timeText}</small></li>`];
+                })
+              ).values()
+            ).join("");
 
-            symptomsEl.innerHTML = `
-              <ul>${symptomListHtml}</ul>`;
+
+
+            symptomsEl.innerHTML = `<ul>${symptomListHtml}</ul>`;
           } else {
             const symptomListHtml = data.symptoms.map(s => {
               const symptom = typeof s === "string" ? s : s?.symptom || "알 수 없음";
@@ -206,8 +214,7 @@
               return `<li>${symptom}${time}</li>`;
             }).join("");
 
-            symptomsEl.innerHTML = `
-              <ul>${symptomListHtml}</ul>`;
+            symptomsEl.innerHTML = `<ul>${symptomListHtml}</ul>`;
           }
 
           resultEl.innerHTML = renderResult(data);
@@ -218,6 +225,7 @@
       } finally {
         btn1.disabled = false;
         btn2.disabled = false;
+        btn3.disabled = false;
       }
     }
 
@@ -247,7 +255,7 @@
           <p class="section-title">기여한 증상</p>
           <ul>${top1SymptomList || "<li>정보 없음</li>"}</ul>
         </div>
-
+  
         <div class="section-title">Top 2~3 예측 질병</div>
         <div class="rank-grid">
           ${others.map(r => {
@@ -266,6 +274,7 @@
       `;
     }
   </script>
+
 </body>
 
 </html>

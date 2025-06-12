@@ -159,9 +159,9 @@
   ],
   "gerd": [
     "acidity",
+    "stomach_pain",
     "chest_pain",
     "cough",
-    "stomach_pain",
     "ulcers_on_tongue",
     "vomiting"
   ],
@@ -391,7 +391,8 @@
     "malaise",
     "phlegm",
     "rusty_sputum",
-    "sweating"
+    "sweating",
+    "neck_pain"
   ],
   "psoriasis": [
     "cough",
@@ -402,7 +403,8 @@
     "silver_like_dusting",
     "skin_peeling",
     "skin_rash",
-    "small_dents_in_nails"
+    "small_dents_in_nails",
+    "neck_pain"
   ],
   "tuberculosis": [
     "blood_in_sputum",
@@ -420,7 +422,8 @@
     "swelled_lymph_nodes",
     "vomiting",
     "weight_loss",
-    "yellowing_of_eyes"
+    "yellowing_of_eyes",
+    "neck_pain"
   ],
   "typhoid": [
     "abdominal_pain",
@@ -458,7 +461,8 @@
     "breathlessness",
     "cough",
     "fatigue",
-    "fever"
+    "fever",
+    "neck_pain"
   ],
   "eczema": [
     "cough",

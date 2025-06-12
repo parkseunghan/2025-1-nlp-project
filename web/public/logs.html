@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>정의되지 않은 증상 로그</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #2a2f45;
+            margin-bottom: 2rem;
+        }
+
+        .log-block {
+            background: #ffffff;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #7c84ec;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .log-item {
+            margin: 0.4rem 0;
+            padding-left: 1rem;
+            border-left: 2px dotted #ccc;
+        }
+
+        .datetime {
+            font-size: 0.85rem;
+            color: #888;
+            margin-right: 1rem;
+        }
+
+        .sentence {
+            font-size: 1rem;
+        }
+
+        .empty {
+            font-style: italic;
+            color: #666;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+        <button onclick="window.location.href='index.html'" style="background-color: #6c757d; color: white; padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer;">
+            ← 메인으로 돌아가기
+        </button>
+    </div>
+    <div class="container">
+        <h1>🧾 정의되지 않은 증상 로그</h1>
+        <div id="log-container">불러오는 중...</div>
+    </div>
+
+    <script>
+        fetch("/logs/unknown-symptoms")
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById("log-container");
+                container.innerHTML = "";
+
+                if (Object.keys(data).length === 0) {
+                    container.innerHTML = "<p class='empty'>정의되지 않은 증상이 없습니다.</p>";
+                    return;
+                }
+
+                Object.entries(data).forEach(([label, entries]) => {
+                    const block = document.createElement("div");
+                    block.className = "log-block";
+
+                    const title = document.createElement("h2");
+                    title.textContent = `• ${label}`;
+                    block.appendChild(title);
+
+                    entries.forEach(entry => {
+                        const item = document.createElement("div");
+                        item.className = "log-item";
+                        item.innerHTML = `<span class="datetime">${entry.datetime}</span><span class="sentence">${entry.sentence}</span>`;
+                        block.appendChild(item);
+                    });
+
+                    container.appendChild(block);
+                });
+            })
+            .catch(err => {
+                document.getElementById("log-container").textContent = "❌ 로그 로드 실패";
+                console.error(err);
+            });
+    </script>
+</body>
+
+</html>
